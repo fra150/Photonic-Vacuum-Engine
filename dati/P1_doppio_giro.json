@@ -1,0 +1,245 @@
+{
+  "punto": "P1 - animazione coerente con il progetto",
+  "rapporto_razionale": {
+    "numeratore": 45,
+    "denominatore": 376,
+    "valore": 0.1196808510638298,
+    "valore_fisico_meno_0_1197": -0.1197,
+    "scarto_relativo": 0.00015997440409529998
+  },
+  "spin_gradi_per_ciclo": 720.0,
+  "contro_gradi_per_ciclo": 86.17021276595744,
+  "controgiri_per_giro_di_spin": 8.355555555555554,
+  "cicli_per_chiusura": 188,
+  "giri_spin_totali": 376.0,
+  "giri_contro_totali": 45.0,
+  "frame_rate": 24,
+  "frame_fine_ciclo": 240,
+  "durata_ciclo_s": 9.958333333333334,
+  "chiavi_spin": [
+    [
+      1,
+      0.0
+    ],
+    [
+      120,
+      360.0
+    ],
+    [
+      240,
+      720.0
+    ]
+  ],
+  "chiavi_contro": [
+    [
+      1,
+      0.0
+    ],
+    [
+      120,
+      43.08510638297872
+    ],
+    [
+      240,
+      86.17021276595744
+    ]
+  ],
+  "campioni": [
+    {
+      "frame": 1,
+      "t_s": 0.0,
+      "spin_deg": 0.0,
+      "contro_deg": 0.0,
+      "spin_giri": 0.0,
+      "contro_giri": 0.0,
+      "rapporto": 0.0
+    },
+    {
+      "frame": 13,
+      "t_s": 0.5,
+      "spin_deg": 36.15062761506275,
+      "contro_deg": 4.326537879462298,
+      "spin_giri": 0.10041841004184097,
+      "contro_giri": 0.01201816077628416,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 25,
+      "t_s": 1.0,
+      "spin_deg": 72.3012552301255,
+      "contro_deg": 8.653075758924595,
+      "spin_giri": 0.20083682008368195,
+      "contro_giri": 0.02403632155256832,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 37,
+      "t_s": 1.5,
+      "spin_deg": 108.45188284518827,
+      "contro_deg": 12.979613638386894,
+      "spin_giri": 0.30125523012552297,
+      "contro_giri": 0.036054482328852486,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 49,
+      "t_s": 2.0,
+      "spin_deg": 144.602510460251,
+      "contro_deg": 17.30615151784919,
+      "spin_giri": 0.4016736401673639,
+      "contro_giri": 0.04807264310513664,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 61,
+      "t_s": 2.5,
+      "spin_deg": 180.7531380753138,
+      "contro_deg": 21.63268939731149,
+      "spin_giri": 0.502092050209205,
+      "contro_giri": 0.06009080388142081,
+      "rapporto": 0.11968085106382978
+    },
+    {
+      "frame": 73,
+      "t_s": 3.0,
+      "spin_deg": 216.90376569037653,
+      "contro_deg": 25.959227276773788,
+      "spin_giri": 0.6025104602510459,
+      "contro_giri": 0.07210896465770497,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 85,
+      "t_s": 3.5,
+      "spin_deg": 253.0543933054393,
+      "contro_deg": 30.28576515623609,
+      "spin_giri": 0.702928870292887,
+      "contro_giri": 0.08412712543398913,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 97,
+      "t_s": 4.0,
+      "spin_deg": 289.205020920502,
+      "contro_deg": 34.61230303569838,
+      "spin_giri": 0.8033472803347278,
+      "contro_giri": 0.09614528621027328,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 109,
+      "t_s": 4.5,
+      "spin_deg": 325.3556485355648,
+      "contro_deg": 38.93884091516068,
+      "spin_giri": 0.9037656903765688,
+      "contro_giri": 0.10816344698655746,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 121,
+      "t_s": 5.0,
+      "spin_deg": 361.5062761506276,
+      "contro_deg": 43.26537879462298,
+      "spin_giri": 1.00418410041841,
+      "contro_giri": 0.12018160776284162,
+      "rapporto": 0.11968085106382978
+    },
+    {
+      "frame": 133,
+      "t_s": 5.5,
+      "spin_deg": 397.6569037656904,
+      "contro_deg": 47.59191667408528,
+      "spin_giri": 1.104602510460251,
+      "contro_giri": 0.1321997685391258,
+      "rapporto": 0.11968085106382978
+    },
+    {
+      "frame": 145,
+      "t_s": 6.0,
+      "spin_deg": 433.80753138075306,
+      "contro_deg": 51.918454553547576,
+      "spin_giri": 1.2050209205020919,
+      "contro_giri": 0.14421792931540994,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 157,
+      "t_s": 6.5,
+      "spin_deg": 469.95815899581584,
+      "contro_deg": 56.24499243300988,
+      "spin_giri": 1.305439330543933,
+      "contro_giri": 0.1562360900916941,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 169,
+      "t_s": 7.0,
+      "spin_deg": 506.1087866108786,
+      "contro_deg": 60.57153031247218,
+      "spin_giri": 1.405857740585774,
+      "contro_giri": 0.16825425086797827,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 181,
+      "t_s": 7.5,
+      "spin_deg": 542.2594142259414,
+      "contro_deg": 64.89806819193447,
+      "spin_giri": 1.5062761506276152,
+      "contro_giri": 0.18027241164426241,
+      "rapporto": 0.11968085106382977
+    },
+    {
+      "frame": 193,
+      "t_s": 8.0,
+      "spin_deg": 578.410041841004,
+      "contro_deg": 69.22460607139676,
+      "spin_giri": 1.6066945606694556,
+      "contro_giri": 0.19229057242054656,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 205,
+      "t_s": 8.5,
+      "spin_deg": 614.5606694560669,
+      "contro_deg": 73.55114395085907,
+      "spin_giri": 1.7071129707112969,
+      "contro_giri": 0.20430873319683077,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 217,
+      "t_s": 9.0,
+      "spin_deg": 650.7112970711296,
+      "contro_deg": 77.87768183032136,
+      "spin_giri": 1.8075313807531377,
+      "contro_giri": 0.21632689397311491,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 229,
+      "t_s": 9.5,
+      "spin_deg": 686.8619246861924,
+      "contro_deg": 82.20421970978367,
+      "spin_giri": 1.907949790794979,
+      "contro_giri": 0.2283450547493991,
+      "rapporto": 0.1196808510638298
+    },
+    {
+      "frame": 240,
+      "t_s": 9.958333333333334,
+      "spin_deg": 720.0,
+      "contro_deg": 86.17021276595744,
+      "spin_giri": 2.0,
+      "contro_giri": 0.23936170212765956,
+      "rapporto": 0.11968085106382978
+    }
+  ],
+  "su2": {
+    "U_2pi": "-1.000-0.000j",
+    "U_4pi": "1.000+0.000j",
+    "verifica_2pi_uguale_meno_identita": true,
+    "verifica_4pi_uguale_identita": true
+  },
+  "nota": "Le chiavi non vanno mai ridotte modulo 360: Blender interpola il valore numerico, quindi 0 -> 360 -> 720 produce due giri reali, mentre 0 -> 360 -> 0 ne produce zero."
+}

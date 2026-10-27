@@ -1,0 +1,126 @@
+{
+  "modello": "tau = P_ass/omega_ott = F lambda/(2 pi)",
+  "omega_ottica_rad_s": 3540698434791077.0,
+  "lambda_m": 5.32e-07,
+  "kT_J": 4.2800119e-21,
+  "casi": [
+    {
+      "nome": "1 nm",
+      "k": 0.001,
+      "r_eff_nm": 0.239931240150173,
+      "massa_kg": 5.7340738109623226e-27,
+      "forza_scattering_N": 9.777271424153226e-28,
+      "frazione_intercettata": 2.9311522327800564e-13,
+      "potenza_assorbita_W": 2.9311522327800564e-19,
+      "beta_telaio_Nms": 2.8921247272696097e-32,
+      "D_rot_1_s": 10274565720.35413,
+      "tau_oam_Nm": 8.278457730199245e-35,
+      "tau_fascio_intero_Nm": 2.8243015281221095e-22,
+      "tau_dichiarata_Nm": 1.6611940371795622e-24,
+      "tau_su_kT": 1.9342137180037385e-14,
+      "omega_ss_rad_s": 0.0028624137998414585,
+      "omega_ss_fascio_intero_rad_s": 9765490061.656054,
+      "Pe_tau_su_kT": 1.9342137180037385e-14,
+      "Pe_omega_su_Dr": 2.785921933586893e-13,
+      "verdetto": "termico"
+    },
+    {
+      "nome": "240 nm",
+      "k": 1.0,
+      "r_eff_nm": 239.931240150173,
+      "massa_kg": 5.734073810962322e-18,
+      "forza_scattering_N": 3.082970814745448e-17,
+      "frazione_intercettata": 0.009242513984948006,
+      "potenza_assorbita_W": 9.242513984948006e-09,
+      "beta_telaio_Nms": 2.8921247272696085e-23,
+      "D_rot_1_s": 10.27456572035413,
+      "tau_oam_Nm": 2.6103646371378617e-24,
+      "tau_fascio_intero_Nm": 2.8243015281221095e-22,
+      "tau_dichiarata_Nm": 1.661194037179562e-21,
+      "tau_su_kT": 0.0006098965839646057,
+      "omega_ss_rad_s": 0.09025767846472685,
+      "omega_ss_fascio_intero_rad_s": 9.765490061656056,
+      "Pe_tau_su_kT": 0.0006098965839646057,
+      "Pe_omega_su_Dr": 0.008784573569462358,
+      "verdetto": "termico"
+    },
+    {
+      "nome": "1 m",
+      "k": 1000000.0,
+      "r_eff_nm": 239931240.150173,
+      "massa_kg": 5.734073810962322,
+      "forza_scattering_N": 3.3356409519815205e-15,
+      "frazione_intercettata": 1.0,
+      "potenza_assorbita_W": 1e-06,
+      "beta_telaio_Nms": 2.892124727269609e-05,
+      "D_rot_1_s": 1.0274565720354131e-17,
+      "tau_oam_Nm": 2.8243015281221095e-22,
+      "tau_fascio_intero_Nm": 2.8243015281221095e-22,
+      "tau_dichiarata_Nm": 1.661194037179562e-15,
+      "tau_su_kT": 0.06598816998901591,
+      "omega_ss_rad_s": 9.765490061656055e-18,
+      "omega_ss_fascio_intero_rad_s": 9.765490061656055e-18,
+      "Pe_tau_su_kT": 0.06598816998901591,
+      "Pe_omega_su_Dr": 0.9504528295838737,
+      "verdetto": "termico"
+    }
+  ],
+  "soglia_potenza_Pe1_W": 1.5154231435217185e-05,
+  "soglia_potenza_Pe1_intercettata_W": 0.001639622234805029,
+  "vuoto_profondo": {
+    "nano_rame": {
+      "fascio_intero": {
+        "tau_Nm": 2.8243015281221095e-22,
+        "alpha_rad_s2": 147853983770.60217,
+        "t_crit_s": 0.008420671324769154
+      },
+      "intercettata": {
+        "tau_Nm": 7.789012149282148e-26,
+        "alpha_rad_s2": 40775974.67699258,
+        "t_crit_s": 30.533416092503327
+      },
+      "R_m": 1.2e-07,
+      "materiale": "Rame",
+      "massa_kg": 2.820805256112609e-19,
+      "I_tot_kgm2": 1.9101964357646655e-33,
+      "omega_rottura_rad_s": 1245029801.3899934,
+      "frazione_intercettata": 0.00027578543125531983
+    },
+    "nano_grafene": {
+      "fascio_intero": {
+        "tau_Nm": 2.8243015281221095e-22,
+        "alpha_rad_s2": 602168952083.907,
+        "t_crit_s": 0.06597418838641372
+      },
+      "intercettata": {
+        "tau_Nm": 7.789012149282148e-26,
+        "alpha_rad_s2": 166069424.1390243,
+        "t_crit_s": 239.22289181887703
+      },
+      "R_m": 1.2e-07,
+      "materiale": "Grafene/CNT",
+      "massa_kg": 6.926084334205068e-20,
+      "I_tot_kgm2": 4.690214462815027e-34,
+      "omega_rottura_rad_s": 39727607885.23302,
+      "frazione_intercettata": 0.00027578543125531983
+    },
+    "macro_rame": {
+      "fascio_intero": {
+        "tau_Nm": 2.8243015281221095e-22,
+        "alpha_rad_s2": 1.1773056796674073e-22,
+        "t_crit_s": 2.538059210060147e+24
+      },
+      "intercettata": {
+        "tau_Nm": 2.8243015281221095e-22,
+        "alpha_rad_s2": 1.1773056796674073e-22,
+        "t_crit_s": 2.538059210060147e+24
+      },
+      "R_m": 0.5,
+      "materiale": "Rame",
+      "massa_kg": 20.405130614240512,
+      "I_tot_kgm2": 2.398953455248754,
+      "omega_rottura_rad_s": 298.8071523335984,
+      "frazione_intercettata": 1.0
+    }
+  }
+}

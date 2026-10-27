@@ -1,0 +1,131 @@
+{
+  "punto": "P3 - chiusura esatta del ciclo",
+  "stato_attuale": {
+    "I1": 3.092e-32,
+    "I2": 2.583e-31,
+    "I2_su_I1": 8.353816300129365,
+    "target_376_45": 8.355555555555556,
+    "scarto_relativo": -0.00020815556962394677,
+    "I2_target": 2.5835377777777782e-31,
+    "delta_I2": 5.37777777778218e-35,
+    "r_bilanciamento_m": 4.2e-08,
+    "massa_bilanciamento_kg": 3.0486268581531634e-20,
+    "atomi_Cu_equivalenti": 288912.9141914373
+  },
+  "verifica": {
+    "errore_prima": -0.00020815556962394677,
+    "errore_dopo": 0.0,
+    "errore_chiusura_gradi_prima": 3.3728222996523582,
+    "errore_chiusura_gradi_dopo": 0.0,
+    "giri_spin_prima": 376.0,
+    "giri_contro_prima": 45.00936895083237,
+    "cicli": 188,
+    "giri_spin": 376.0,
+    "giri_contro": 45.0,
+    "entrambi_interi": true
+  },
+  "massa_bilanciamento_vs_raggio": [
+    {
+      "r_bilanciamento_nm": 20.0,
+      "massa_kg": 1.3444444444455448e-19
+    },
+    {
+      "r_bilanciamento_nm": 22.5,
+      "massa_kg": 1.0622770919075911e-19
+    },
+    {
+      "r_bilanciamento_nm": 25.000000000000004,
+      "massa_kg": 8.604444444451486e-20
+    },
+    {
+      "r_bilanciamento_nm": 27.5,
+      "massa_kg": 7.11111111111693e-20
+    },
+    {
+      "r_bilanciamento_nm": 30.000000000000004,
+      "massa_kg": 5.975308641980198e-20
+    },
+    {
+      "r_bilanciamento_nm": 32.50000000000001,
+      "massa_kg": 5.0913872452375646e-20
+    },
+    {
+      "r_bilanciamento_nm": 35.0,
+      "massa_kg": 4.390022675740554e-20
+    },
+    {
+      "r_bilanciamento_nm": 37.50000000000001,
+      "massa_kg": 3.824197530867327e-20
+    },
+    {
+      "r_bilanciamento_nm": 40.0,
+      "massa_kg": 3.361111111113862e-20
+    },
+    {
+      "r_bilanciamento_nm": 42.5,
+      "massa_kg": 2.97731641676522e-20
+    },
+    {
+      "r_bilanciamento_nm": 45.00000000000001,
+      "massa_kg": 2.655692729768977e-20
+    },
+    {
+      "r_bilanciamento_nm": 47.50000000000001,
+      "massa_kg": 2.383502616191547e-20
+    },
+    {
+      "r_bilanciamento_nm": 50.00000000000001,
+      "massa_kg": 2.1511111111128715e-20
+    },
+    {
+      "r_bilanciamento_nm": 52.50000000000001,
+      "massa_kg": 1.951121189218024e-20
+    },
+    {
+      "r_bilanciamento_nm": 55.00000000000001,
+      "massa_kg": 1.7777777777792322e-20
+    },
+    {
+      "r_bilanciamento_nm": 57.50000000000001,
+      "massa_kg": 1.6265490443197515e-20
+    },
+    {
+      "r_bilanciamento_nm": 60.00000000000001,
+      "massa_kg": 1.4938271604950494e-20
+    },
+    {
+      "r_bilanciamento_nm": 62.50000000000001,
+      "massa_kg": 1.3767111111122374e-20
+    },
+    {
+      "r_bilanciamento_nm": 65.00000000000001,
+      "massa_kg": 1.2728468113093912e-20
+    },
+    {
+      "r_bilanciamento_nm": 67.50000000000001,
+      "massa_kg": 1.1803078798973228e-20
+    },
+    {
+      "r_bilanciamento_nm": 70.00000000000001,
+      "massa_kg": 1.0975056689351382e-20
+    },
+    {
+      "r_bilanciamento_nm": 72.50000000000001,
+      "massa_kg": 1.0231206235970852e-20
+    },
+    {
+      "r_bilanciamento_nm": 75.00000000000001,
+      "massa_kg": 9.560493827168317e-21
+    },
+    {
+      "r_bilanciamento_nm": 77.50000000000001,
+      "massa_kg": 8.953636258534324e-21
+    },
+    {
+      "r_bilanciamento_nm": 80.0,
+      "massa_kg": 8.402777777784655e-21
+    }
+  ],
+  "frazione_di_I2": 0.00020819890738606967,
+  "nota": "Lo scarto attuale e' di 2.1e-4: basta una massa di 3.05e-20 kg a 42 nm, cioe' 2.9e5 atomi di rame, per portare I2/I1 esattamente a 376/45 e chiudere il moto dopo 188 cicli."
+}

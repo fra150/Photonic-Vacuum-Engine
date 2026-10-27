@@ -1,0 +1,20 @@
+{
+  "frequenza_Hz": 1000000000.0,
+  "omega_rad_s": 6283185307.179586,
+  "v_tangenziale_m_s": 2057.7431881013144,
+  "Mach_in_acqua": 1.3903670189873747,
+  "accelerazione_m_s2": 12929181765427.059,
+  "accelerazione_in_g": 1318409626674.4565,
+  "tensione_centrifuga_Pa": 37939390972.46916,
+  "snervamento_Cu_Pa": 200000000.0,
+  "margine_strutturale": 0.005271565907453038,
+  "velocita_limite_snervamento_m_s": 149.4035761667992,
+  "frequenza_limite_snervamento_Hz": 72605550.11466438,
+  "frequenza_limite_cavitazione_Hz": 719234551.9878019,
+  "Re_rotazione": 1121.1630908229915,
+  "coppia_per_attrito_Nm": 1.8171755592911171e-13,
+  "potenza_dissipata_W": 0.0011417650774703794,
+  "riscaldamento_K_al_secondo": 4722924033.387836,
+  "verdetto": "impossibile",
+  "nota": "A 1 GHz la velocita' tangenziale supera quella del suono nell'acqua e la tensione centrifuga supera lo snervamento del rame di 190 volte. Il limite strutturale e' 72.6 MHz, quello di cavitazione 719 MHz: il regime a 1 GHz e' impossibile, non difficile."
+}

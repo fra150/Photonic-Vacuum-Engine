@@ -1,0 +1,51 @@
+{
+  "titolo": "Motore Fotonico del Vuoto - V5 - indice dei dati",
+  "autore": "Dr. Francesco Bulla",
+  "data": "2026-10-25",
+  "costanti": {
+    "T_K": 310.0,
+    "eta_Pas": 0.0012,
+    "rho_kgm3": 998.2,
+    "P_laser_W": 1e-06,
+    "lambda_nm": 532.0,
+    "w0_nm": 500.0,
+    "r_eff_nm": 239.931240150173
+  },
+  "punti": {
+    "P1": {
+      "file": "P1_doppio_giro.json",
+      "esito": "spin 720 gradi, contro 86.1702, chiusura in 188 cicli"
+    },
+    "P2": {
+      "file": "P2_dissipazione.json",
+      "esito": "beta telaio 2.892e-23 N m s, tau/kT = 6.10e-04"
+    },
+    "P3": {
+      "file": "P3_chiusura.json",
+      "esito": "massa di bilanciamento 3.049e-20 kg a 42 nm"
+    },
+    "P4": {
+      "file": "P4_scattering.json",
+      "esito": "F_z = 3.083e-17 N contro 5.072e-15 N dichiarati"
+    },
+    "P5": {
+      "file": "P5_protocollo.json",
+      "esito": "coppia 2.61e-24 N m, tau/kT = 6.10e-04; periodo pi"
+    }
+  },
+  "scale": {
+    "S1": "1 nm - browniano puro, tau/kT = 1.93e-14",
+    "S2": "240 nm - migliore delle tre, tau/kT = 6.10e-04",
+    "S3": "1 m - inerzia domina, un giro ogni 2.0e+10 anni",
+    "S4": "1 GHz - impossibile: 73 MHz il limite strutturale"
+  },
+  "verdetti": {
+    "spin_720": "dimostrato come cinematica e come copertura SU(2)",
+    "coppia": "predetta, non piu' stimata: 165 volte sotto la V4",
+    "dissipazione": "il telaio riduce beta di 15.5 volte rispetto al disco pieno",
+    "chiusura": "ottenibile con 2.9e5 atomi di rame a 42 nm",
+    "1_nm": "termalizzato",
+    "1_m": "non e' un motore",
+    "1_ghz": "impossibile per resistenza del rame"
+  }
+}

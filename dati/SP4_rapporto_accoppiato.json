@@ -1,0 +1,135 @@
+{
+  "descrizione": "regime stazionario con il vincolo I1 w1 + I2 w2 = 0",
+  "formula": "w1 = (tau1 + tau2) / (beta1 - beta2 * I1/I2),  w2 = -(I1/I2) w1",
+  "target_rapporto": 0.1196808510638298,
+  "risultati": {
+    "10^-9_m": {
+      "dichiarata": {
+        "omega_spin_rad_s": 22459.83876963772,
+        "omega_contro_rad_s": -2687.7160309890555,
+        "omega_contro_su_spin": -0.11966764581687193,
+        "coppia_di_scambio_Nm": 5.072100021735142e-28,
+        "potenza_dissipata_W": 1.0623390560880175e-23,
+        "denominatore_Nms": 3.824407705215401e-32
+      },
+      "scattering": {
+        "omega_spin_rad_s": 0.004329275730152824,
+        "omega_contro_rad_s": -0.0005180742347195078,
+        "omega_contro_su_spin": -0.11966764581687193,
+        "coppia_di_scambio_Nm": 9.776793034992812e-35,
+        "potenza_dissipata_W": 3.947120392797667e-37,
+        "denominatore_Nms": 3.824407705215401e-32
+      },
+      "I1_su_I2": 0.11966764581687193,
+      "target_45_376": 0.1196808510638298
+    },
+    "massa_10^-18_kg": {
+      "dichiarata": {
+        "omega_spin_rad_s": 22.459838769637724,
+        "omega_contro_rad_s": -2.687716030989056,
+        "omega_contro_su_spin": -0.11966764581687195,
+        "coppia_di_scambio_Nm": 5.072100021735142e-22,
+        "potenza_dissipata_W": 1.0623390560880178e-20,
+        "denominatore_Nms": 3.8244077052154006e-23
+      },
+      "scattering": {
+        "omega_spin_rad_s": 0.13651079269493518,
+        "omega_contro_rad_s": -0.016335925190397935,
+        "omega_contro_su_spin": -0.11966764581687195,
+        "coppia_di_scambio_Nm": 3.082819968997625e-24,
+        "potenza_dissipata_W": 3.924495692496117e-25,
+        "denominatore_Nms": 3.8244077052154006e-23
+      },
+      "I1_su_I2": 0.11966764581687195,
+      "target_45_376": 0.1196808510638298
+    },
+    "1_m": {
+      "dichiarata": {
+        "omega_spin_rad_s": 2.2459838769637728e-17,
+        "omega_contro_rad_s": -2.687716030989057e-18,
+        "omega_contro_su_spin": -0.11966764581687196,
+        "coppia_di_scambio_Nm": 5.072100021735144e-22,
+        "potenza_dissipata_W": 1.062339056088018e-38,
+        "denominatore_Nms": 3.8244077052154e-05
+      },
+      "scattering": {
+        "omega_spin_rad_s": 1.4769876779981218e-17,
+        "omega_contro_rad_s": -1.767476383265634e-18,
+        "omega_contro_su_spin": -0.11966764581687198,
+        "coppia_di_scambio_Nm": 3.335477743412869e-22,
+        "potenza_dissipata_W": 4.5941336360333824e-39,
+        "denominatore_Nms": 3.8244077052154e-05
+      },
+      "I1_su_I2": 0.11966764581687196,
+      "target_45_376": 0.1196808510638298
+    },
+    "1_m_materiali": {
+      "Grafene/CNT": {
+        "I1_su_I2": 0.11966764581687193,
+        "target_45_376": 0.1196808510638298,
+        "scarto_rapporto_inerzia": -1.3205246957859185e-05,
+        "dichiarata": {
+          "omega_spin_rad_s": 2.2459838769637728e-17,
+          "omega_contro_rad_s": -2.6877160309890562e-18,
+          "omega_contro_su_spin": -0.11966764581687192,
+          "coppia_di_scambio_Nm": 5.072100021735144e-22,
+          "potenza_dissipata_W": 1.062339056088018e-38,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "scattering": {
+          "omega_spin_rad_s": 1.4769876779981218e-17,
+          "omega_contro_rad_s": -1.7674763832656335e-18,
+          "omega_contro_su_spin": -0.11966764581687195,
+          "coppia_di_scambio_Nm": 3.335477743412869e-22,
+          "potenza_dissipata_W": 4.5941336360333824e-39,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "nota": "il rapporto I1/I2 dipende solo dalla geometria (la densita' si semplifica): 45/376 e' una proprieta' della forma, non del materiale ne' della scala."
+      },
+      "SiC": {
+        "I1_su_I2": 0.11966764581687195,
+        "target_45_376": 0.1196808510638298,
+        "scarto_rapporto_inerzia": -1.3205246957845307e-05,
+        "dichiarata": {
+          "omega_spin_rad_s": 2.2459838769637728e-17,
+          "omega_contro_rad_s": -2.6877160309890566e-18,
+          "omega_contro_su_spin": -0.11966764581687195,
+          "coppia_di_scambio_Nm": 5.072100021735144e-22,
+          "potenza_dissipata_W": 1.062339056088018e-38,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "scattering": {
+          "omega_spin_rad_s": 1.4769876779981218e-17,
+          "omega_contro_rad_s": -1.7674763832656335e-18,
+          "omega_contro_su_spin": -0.11966764581687195,
+          "coppia_di_scambio_Nm": 3.335477743412869e-22,
+          "potenza_dissipata_W": 4.5941336360333824e-39,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "nota": "il rapporto I1/I2 dipende solo dalla geometria (la densita' si semplifica): 45/376 e' una proprieta' della forma, non del materiale ne' della scala."
+      },
+      "Metamateriale Si/SiO2": {
+        "I1_su_I2": 0.11966764581687198,
+        "target_45_376": 0.1196808510638298,
+        "scarto_rapporto_inerzia": -1.3205246957817551e-05,
+        "dichiarata": {
+          "omega_spin_rad_s": 2.2459838769637728e-17,
+          "omega_contro_rad_s": -2.6877160309890574e-18,
+          "omega_contro_su_spin": -0.11966764581687198,
+          "coppia_di_scambio_Nm": 5.072100021735144e-22,
+          "potenza_dissipata_W": 1.062339056088018e-38,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "scattering": {
+          "omega_spin_rad_s": 1.4769876779981218e-17,
+          "omega_contro_rad_s": -1.767476383265634e-18,
+          "omega_contro_su_spin": -0.11966764581687198,
+          "coppia_di_scambio_Nm": 3.335477743412869e-22,
+          "potenza_dissipata_W": 4.5941336360333824e-39,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "nota": "il rapporto I1/I2 dipende solo dalla geometria (la densita' si semplifica): 45/376 e' una proprieta' della forma, non del materiale ne' della scala."
+      }
+    }
+  }
+}

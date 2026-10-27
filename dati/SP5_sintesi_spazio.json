@@ -1,0 +1,22 @@
+{
+  "descrizione": "sintesi del modulo spaziale",
+  "scale": [
+    "10^-9_m",
+    "massa_10^-18_kg",
+    "1_m"
+  ],
+  "materiali_1m": [
+    "Grafene/CNT",
+    "SiC",
+    "Metamateriale Si/SiO2"
+  ],
+  "valori_chiave": {
+    "spinta_peso_terra_v4_scattering": 2.5223979119063453,
+    "spinta_peso_terra_v4_dichiarata": 415.0049186286009,
+    "omega_accoppiato_v4_dich": 22.459838769637724,
+    "omega_accoppiato_v4_scattering": 0.13651079269493518,
+    "Pe_r_1nm_scattering": 1.9342137180037385e-14,
+    "Pe_r_v4_scattering": 0.0006098965839646057,
+    "Pe_r_1m_scattering": 0.06598816998901591
+  }
+}

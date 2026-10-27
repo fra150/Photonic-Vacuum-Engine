@@ -1,0 +1,588 @@
+{
+  "descrizione": "Spin e Contro-spin in microgravita' alle tre scale richieste",
+  "ambiente": "g = 0, fluido presente (eta = 1.2e-03 Pa s)",
+  "criterio_determinismo": {
+    "definizione": "Pe_r = omega_ss / D_r = tau / kT",
+    "D_r": "kT / beta, con la stessa beta del termine dissipativo tau_diss = -beta*omega (relazione di Einstein)",
+    "controprova": "Pe_r = omega_ss/D_r = (tau/beta)/(kT/beta) = tau/kT: il criterio non dipende dall'attrito.",
+    "attenzione": "accoppiare beta ridotta da FILL_FRAME con D_r = kT/(8 pi eta R^3) gonfia Pe_r: il fattore di gonfiamento e' quantificato in SP2 (riconciliazione)."
+  },
+  "verifica_masse_v4": {
+    "Spin": {
+      "massa_calcolata_kg": 1.2463359999999998e-18,
+      "massa_preprint_v4_kg": 1.2463630573655231e-18,
+      "scarto_relativo": -2.17090560920008e-05
+    },
+    "Contro-spin": {
+      "massa_calcolata_kg": 4.488064e-18,
+      "massa_preprint_v4_kg": 4.487710753596799e-18,
+      "scarto_relativo": 7.87141646589884e-05
+    }
+  },
+  "casi": {
+    "10^-9_m": {
+      "nome": "10^-9_m",
+      "etichetta": "dispositivo da 1 nm",
+      "k": 0.001,
+      "ingombro_m": 1.9e-09,
+      "ambiente": "microgravita' con fluido (g = 0)",
+      "spin": {
+        "rotore": "Spin",
+        "materiale": "Cu",
+        "k": 0.001,
+        "geometria": {
+          "raggio_m": 3.7e-10,
+          "raggio_idrodinamico_m": 1.575023809343846e-10,
+          "raggio_sfera_equivalente_m": 3.214248921813829e-11,
+          "volume_m3": 1.3909999999999999e-31,
+          "r2_m2": 2.4806999999999997e-20,
+          "lunghezza_filo_m": 4.3239999999999995e-09
+        },
+        "inerzia": {
+          "massa_kg": 1.2463359999999999e-27,
+          "momento_kgm2": 3.0917857151999993e-47,
+          "densita_kgm3": 8960.0
+        },
+        "attrito": {
+          "beta_Nms": 4.170501462736518e-32,
+          "D_rot_einstein_1_s": 102625833805.40588,
+          "tau_rot_s": 4.8720676018874126e-12,
+          "tempo_inerziale_s": 7.413462728223795e-16,
+          "nota": "D_r = kT/beta: stessa beta del termine dissipativo"
+        },
+        "coppia": {
+          "forza_dichiarata_N": 5.0723482051284335e-21,
+          "coppia_dichiarata_Nm": 4.294779022424905e-28,
+          "forza_scattering_N": 9.777271424153226e-28,
+          "coppia_scattering_Nm": 8.278457730199245e-35,
+          "rapporto_scattering_dichiarata": 1.927563138167022e-07,
+          "coppia_su_kT_dichiarata": 1.0034502526558173e-07,
+          "coppia_su_kT_scattering": 1.9342137180037385e-14
+        },
+        "regime_libero": {
+          "omega_dichiarata_rad_s": 10297.991886104845,
+          "omega_scattering_rad_s": 0.0019850029556798786,
+          "Pe_r_dichiarata": 1.0034502526558173e-07,
+          "Pe_r_scattering": 1.9342137180037385e-14,
+          "giri_anno_dichiarata": 51722158882.31062,
+          "giri_anno_scattering": 9969.772688795998,
+          "energia_su_kT_dichiarata": 3.83035921747596e-19,
+          "potenza_per_Pe_r_1_dichiarata_W": 9.96561610656148,
+          "potenza_per_Pe_r_1_scattering_W": 51700594.959696546,
+          "verdetto_dichiarata": "termico",
+          "verdetto_scattering": "termico",
+          "nota": "Pe_r = omega/D_r = tau/kT: criterio indipendente da beta.  Con tau = F lambda/(2 pi) cresce con l'area intercettata e satura quando la struttura copre il fascio."
+        },
+        "terra": {
+          "g_m_s2": 9.80665,
+          "peso_N": 1.2222380934399998e-26,
+          "peso_apparente_N": 1.0860731308426998e-26,
+          "spinta_peso_dichiarata": 415004.91862860083,
+          "spinta_peso_scattering": 0.07999481833064956,
+          "v_sedimentazione_m_s": 3.0485237095649813e-15,
+          "Pe_gravitazionale": 4.497777442756708e-16,
+          "galleggia": false
+        },
+        "spazio": {
+          "g_m_s2": 0.0,
+          "peso_apparente_N": 0.0,
+          "spinta_peso": null,
+          "spinta_peso_nota": "indefinito: in g = 0 il peso e' nullo e il rapporto spinta/peso diverge",
+          "v_sedimentazione_m_s": 0.0,
+          "Pe_gravitazionale": 0.0,
+          "numero_di_grashof": 0.0,
+          "nota": "beta e tau non dipendono da g: omega di regime e' identico a terra.  In microgravita' spariscono peso, sedimentazione e convezione, non l'attrito viscoso."
+        },
+        "meccanica": {
+          "resistenza_materiale_Pa": 200000000.0,
+          "omega_limite_rad_s": 403793449099.4573,
+          "velocita_limite_m_s": 149.4035761667992,
+          "tensione_a_regime_Pa": 1.300818031719978e-07,
+          "margine": 1537494062375153.2,
+          "margine_scattering": 4.138054653577116e+28
+        }
+      },
+      "contro": {
+        "rotore": "Contro-spin",
+        "materiale": "Cu",
+        "k": 0.001,
+        "geometria": {
+          "raggio_m": 3.275e-10,
+          "raggio_idrodinamico_m": 2.39931240150173e-10,
+          "raggio_sfera_equivalente_m": 4.9266775735083946e-11,
+          "volume_m3": 5.0090000000000005e-31,
+          "r2_m2": 5.756699999999999e-20,
+          "lunghezza_filo_m": 4.2986e-09
+        },
+        "inerzia": {
+          "massa_kg": 4.488064000000001e-27,
+          "momento_kgm2": 2.58364380288e-46,
+          "densita_kgm3": 8960.0
+        },
+        "attrito": {
+          "beta_Nms": 2.8921247272696097e-32,
+          "D_rot_einstein_1_s": 147988496472.64914,
+          "tau_rot_s": 3.3786409884393193e-12,
+          "tempo_inerziale_s": 8.933376138722622e-15,
+          "nota": "D_r = kT/beta: stessa beta del termine dissipativo"
+        },
+        "coppia": {
+          "forza_dichiarata_N": 5.0723482051284335e-21,
+          "coppia_dichiarata_Nm": 4.294779022424905e-28,
+          "forza_scattering_N": 9.777271424153226e-28,
+          "coppia_scattering_Nm": 8.278457730199245e-35,
+          "rapporto_scattering_dichiarata": 1.927563138167022e-07,
+          "coppia_su_kT_dichiarata": 1.0034502526558173e-07,
+          "coppia_su_kT_scattering": 1.9342137180037385e-14
+        },
+        "regime_libero": {
+          "omega_dichiarata_rad_s": 14849.90941756343,
+          "omega_scattering_rad_s": 0.0028624137998414585,
+          "Pe_r_dichiarata": 1.0034502526558173e-07,
+          "Pe_r_scattering": 1.9342137180037385e-14,
+          "giri_anno_dichiarata": 74584383322.29588,
+          "giri_anno_scattering": 14376.61079749768,
+          "energia_su_kT_dichiarata": 6.655876818579669e-18,
+          "potenza_per_Pe_r_1_dichiarata_W": 9.96561610656148,
+          "potenza_per_Pe_r_1_scattering_W": 51700594.959696546,
+          "verdetto_dichiarata": "termico",
+          "verdetto_scattering": "termico",
+          "nota": "Pe_r = omega/D_r = tau/kT: criterio indipendente da beta.  Con tau = F lambda/(2 pi) cresce con l'area intercettata e satura quando la struttura copre il fascio."
+        },
+        "terra": {
+          "g_m_s2": 9.80665,
+          "peso_N": 4.4012872825600003e-26,
+          "peso_apparente_N": 3.9109563712373005e-26,
+          "spinta_peso_dichiarata": 115246.9238994577,
+          "spinta_peso_scattering": 0.02221457222957347,
+          "v_sedimentazione_m_s": 7.20632431457316e-15,
+          "Pe_gravitazionale": 2.467297616536547e-15,
+          "galleggia": false
+        },
+        "spazio": {
+          "g_m_s2": 0.0,
+          "peso_apparente_N": 0.0,
+          "spinta_peso": null,
+          "spinta_peso_nota": "indefinito: in g = 0 il peso e' nullo e il rapporto spinta/peso diverge",
+          "v_sedimentazione_m_s": 0.0,
+          "Pe_gravitazionale": 0.0,
+          "numero_di_grashof": 0.0,
+          "nota": "beta e tau non dipendono da g: omega di regime e' identico a terra.  In microgravita' spariscono peso, sedimentazione e convezione, non l'attrito viscoso."
+        },
+        "meccanica": {
+          "resistenza_materiale_Pa": 200000000.0,
+          "omega_limite_rad_s": 456194125700.1502,
+          "velocita_limite_m_s": 149.40357616679918,
+          "tensione_a_regime_Pa": 2.119230654481107e-07,
+          "margine": 943738708087770.4,
+          "margine_scattering": 2.540004835355626e+28
+        }
+      },
+      "accoppiato": {
+        "I1_su_I2": 0.11966764581687193,
+        "target_45_376": 0.1196808510638298,
+        "scarto_rapporto_inerzia": -1.3205246957859185e-05,
+        "dichiarata": {
+          "omega_spin_rad_s": 22459.83876963772,
+          "omega_contro_rad_s": -2687.7160309890555,
+          "omega_contro_su_spin": -0.11966764581687193,
+          "coppia_di_scambio_Nm": 5.072100021735142e-28,
+          "potenza_dissipata_W": 1.0623390560880175e-23,
+          "denominatore_Nms": 3.824407705215401e-32
+        },
+        "scattering": {
+          "omega_spin_rad_s": 0.004329275730152824,
+          "omega_contro_rad_s": -0.0005180742347195078,
+          "omega_contro_su_spin": -0.11966764581687193,
+          "coppia_di_scambio_Nm": 9.776793034992812e-35,
+          "potenza_dissipata_W": 3.947120392797667e-37,
+          "denominatore_Nms": 3.824407705215401e-32
+        },
+        "nota": "il rapporto I1/I2 dipende solo dalla geometria (la densita' si semplifica): 45/376 e' una proprieta' della forma, non del materiale ne' della scala."
+      },
+      "riferimento_nucleo": {
+        "R_disco_m": 3.275e-10,
+        "beta_telaio_Nms": 2.8921247272696097e-32,
+        "coppia_ottica_Nm": 8.278457730199245e-35,
+        "omega_ss_rad_s": 0.0028624137998414585,
+        "nota": "v5_nucleo applica R_DISC a entrambi i rotori; qui ogni rotore usa il proprio raggio esterno (3.70 u.a. Spin, 3.275 u.a. Contro-spin).  Lo scarto fra i due omega e' il solo fattore geometrico (R_rotore/R_DISC)^3."
+      }
+    },
+    "massa_10^-18_kg": {
+      "nome": "massa_10^-18_kg",
+      "etichetta": "dispositivo V4: Spin 1.246e-18 kg, Contro-spin 4.488e-18 kg",
+      "k": 1.0,
+      "ingombro_m": 1.9e-06,
+      "ambiente": "microgravita' con fluido (g = 0)",
+      "spin": {
+        "rotore": "Spin",
+        "materiale": "Cu",
+        "k": 1.0,
+        "geometria": {
+          "raggio_m": 3.7e-07,
+          "raggio_idrodinamico_m": 1.575023809343846e-07,
+          "raggio_sfera_equivalente_m": 3.214248921813827e-08,
+          "volume_m3": 1.3909999999999999e-22,
+          "r2_m2": 2.4806999999999998e-14,
+          "lunghezza_filo_m": 4.324e-06
+        },
+        "inerzia": {
+          "massa_kg": 1.2463359999999998e-18,
+          "momento_kgm2": 3.0917857151999995e-32,
+          "densita_kgm3": 8960.0
+        },
+        "attrito": {
+          "beta_Nms": 4.1705014627365174e-23,
+          "D_rot_einstein_1_s": 102.62583380540589,
+          "tau_rot_s": 0.004872067601887412,
+          "tempo_inerziale_s": 7.413462728223796e-10,
+          "nota": "D_r = kT/beta: stessa beta del termine dissipativo"
+        },
+        "coppia": {
+          "forza_dichiarata_N": 5.072348205128434e-15,
+          "coppia_dichiarata_Nm": 4.294779022424905e-22,
+          "forza_scattering_N": 3.082970814745448e-17,
+          "coppia_scattering_Nm": 2.6103646371378617e-24,
+          "rapporto_scattering_dichiarata": 0.0060779952204945,
+          "coppia_su_kT_dichiarata": 0.10034502526558173,
+          "coppia_su_kT_scattering": 0.0006098965839646057
+        },
+        "regime_libero": {
+          "omega_dichiarata_rad_s": 10.297991886104846,
+          "omega_scattering_rad_s": 0.0625911454644364,
+          "Pe_r_dichiarata": 0.10034502526558173,
+          "Pe_r_scattering": 0.0006098965839646057,
+          "giri_anno_dichiarata": 51722158.88231064,
+          "giri_anno_scattering": 314367.0344803412,
+          "energia_su_kT_dichiarata": 3.830359217475962e-10,
+          "potenza_per_Pe_r_1_dichiarata_W": 9.96561610656148e-06,
+          "potenza_per_Pe_r_1_scattering_W": 0.0016396222348050292,
+          "verdetto_dichiarata": "termico",
+          "verdetto_scattering": "termico",
+          "nota": "Pe_r = omega/D_r = tau/kT: criterio indipendente da beta.  Con tau = F lambda/(2 pi) cresce con l'area intercettata e satura quando la struttura copre il fascio."
+        },
+        "terra": {
+          "g_m_s2": 9.80665,
+          "peso_N": 1.2222380934399998e-17,
+          "peso_apparente_N": 1.0860731308426998e-17,
+          "spinta_peso_dichiarata": 415.0049186286009,
+          "spinta_peso_scattering": 2.5223979119063453,
+          "v_sedimentazione_m_s": 3.0485237095649815e-09,
+          "Pe_gravitazionale": 0.0004497777442756708,
+          "galleggia": false
+        },
+        "spazio": {
+          "g_m_s2": 0.0,
+          "peso_apparente_N": 0.0,
+          "spinta_peso": null,
+          "spinta_peso_nota": "indefinito: in g = 0 il peso e' nullo e il rapporto spinta/peso diverge",
+          "v_sedimentazione_m_s": 0.0,
+          "Pe_gravitazionale": 0.0,
+          "numero_di_grashof": 0.0,
+          "nota": "beta e tau non dipendono da g: omega di regime e' identico a terra.  In microgravita' spariscono peso, sedimentazione e convezione, non l'attrito viscoso."
+        },
+        "meccanica": {
+          "resistenza_materiale_Pa": 200000000.0,
+          "omega_limite_rad_s": 403793449.09945726,
+          "velocita_limite_m_s": 149.40357616679918,
+          "tensione_a_regime_Pa": 1.3008180317199784e-07,
+          "margine": 1537494062375153.0,
+          "margine_scattering": 4.1619105203443106e+19
+        }
+      },
+      "contro": {
+        "rotore": "Contro-spin",
+        "materiale": "Cu",
+        "k": 1.0,
+        "geometria": {
+          "raggio_m": 3.275e-07,
+          "raggio_idrodinamico_m": 2.39931240150173e-07,
+          "raggio_sfera_equivalente_m": 4.926677573508393e-08,
+          "volume_m3": 5.009e-22,
+          "r2_m2": 5.7567e-14,
+          "lunghezza_filo_m": 4.2986e-06
+        },
+        "inerzia": {
+          "massa_kg": 4.488064e-18,
+          "momento_kgm2": 2.58364380288e-31,
+          "densita_kgm3": 8960.0
+        },
+        "attrito": {
+          "beta_Nms": 2.8921247272696085e-23,
+          "D_rot_einstein_1_s": 147.98849647264922,
+          "tau_rot_s": 0.0033786409884393174,
+          "tempo_inerziale_s": 8.933376138722624e-09,
+          "nota": "D_r = kT/beta: stessa beta del termine dissipativo"
+        },
+        "coppia": {
+          "forza_dichiarata_N": 5.072348205128434e-15,
+          "coppia_dichiarata_Nm": 4.294779022424905e-22,
+          "forza_scattering_N": 3.082970814745448e-17,
+          "coppia_scattering_Nm": 2.6103646371378617e-24,
+          "rapporto_scattering_dichiarata": 0.0060779952204945,
+          "coppia_su_kT_dichiarata": 0.10034502526558173,
+          "coppia_su_kT_scattering": 0.0006098965839646057
+        },
+        "regime_libero": {
+          "omega_dichiarata_rad_s": 14.849909417563437,
+          "omega_scattering_rad_s": 0.09025767846472685,
+          "Pe_r_dichiarata": 0.10034502526558171,
+          "Pe_r_scattering": 0.0006098965839646056,
+          "giri_anno_dichiarata": 74584383.32229592,
+          "giri_anno_scattering": 453323.5253564444,
+          "energia_su_kT_dichiarata": 6.655876818579676e-09,
+          "potenza_per_Pe_r_1_dichiarata_W": 9.96561610656148e-06,
+          "potenza_per_Pe_r_1_scattering_W": 0.0016396222348050292,
+          "verdetto_dichiarata": "termico",
+          "verdetto_scattering": "termico",
+          "nota": "Pe_r = omega/D_r = tau/kT: criterio indipendente da beta.  Con tau = F lambda/(2 pi) cresce con l'area intercettata e satura quando la struttura copre il fascio."
+        },
+        "terra": {
+          "g_m_s2": 9.80665,
+          "peso_N": 4.4012872825599996e-17,
+          "peso_apparente_N": 3.9109563712372993e-17,
+          "spinta_peso_dichiarata": 115.24692389945773,
+          "spinta_peso_scattering": 0.7004702526375975,
+          "v_sedimentazione_m_s": 7.206324314573157e-09,
+          "Pe_gravitazionale": 0.002467297616536547,
+          "galleggia": false
+        },
+        "spazio": {
+          "g_m_s2": 0.0,
+          "peso_apparente_N": 0.0,
+          "spinta_peso": null,
+          "spinta_peso_nota": "indefinito: in g = 0 il peso e' nullo e il rapporto spinta/peso diverge",
+          "v_sedimentazione_m_s": 0.0,
+          "Pe_gravitazionale": 0.0,
+          "numero_di_grashof": 0.0,
+          "nota": "beta e tau non dipendono da g: omega di regime e' identico a terra.  In microgravita' spariscono peso, sedimentazione e convezione, non l'attrito viscoso."
+        },
+        "meccanica": {
+          "resistenza_materiale_Pa": 200000000.0,
+          "omega_limite_rad_s": 456194125.70015025,
+          "velocita_limite_m_s": 149.4035761667992,
+          "tensione_a_regime_Pa": 2.1192306544811085e-07,
+          "margine": 943738708087769.8,
+          "margine_scattering": 2.55464795199206e+19
+        }
+      },
+      "accoppiato": {
+        "I1_su_I2": 0.11966764581687195,
+        "target_45_376": 0.1196808510638298,
+        "scarto_rapporto_inerzia": -1.3205246957845307e-05,
+        "dichiarata": {
+          "omega_spin_rad_s": 22.459838769637724,
+          "omega_contro_rad_s": -2.687716030989056,
+          "omega_contro_su_spin": -0.11966764581687195,
+          "coppia_di_scambio_Nm": 5.072100021735142e-22,
+          "potenza_dissipata_W": 1.0623390560880178e-20,
+          "denominatore_Nms": 3.8244077052154006e-23
+        },
+        "scattering": {
+          "omega_spin_rad_s": 0.13651079269493518,
+          "omega_contro_rad_s": -0.016335925190397935,
+          "omega_contro_su_spin": -0.11966764581687195,
+          "coppia_di_scambio_Nm": 3.082819968997625e-24,
+          "potenza_dissipata_W": 3.924495692496117e-25,
+          "denominatore_Nms": 3.8244077052154006e-23
+        },
+        "nota": "il rapporto I1/I2 dipende solo dalla geometria (la densita' si semplifica): 45/376 e' una proprieta' della forma, non del materiale ne' della scala."
+      },
+      "riferimento_nucleo": {
+        "R_disco_m": 3.275e-07,
+        "beta_telaio_Nms": 2.8921247272696085e-23,
+        "coppia_ottica_Nm": 2.6103646371378617e-24,
+        "omega_ss_rad_s": 0.09025767846472685,
+        "nota": "v5_nucleo applica R_DISC a entrambi i rotori; qui ogni rotore usa il proprio raggio esterno (3.70 u.a. Spin, 3.275 u.a. Contro-spin).  Lo scarto fra i due omega e' il solo fattore geometrico (R_rotore/R_DISC)^3."
+      }
+    },
+    "1_m": {
+      "nome": "1_m",
+      "etichetta": "pseudo-motore da 1 m di ingombro",
+      "k": 1000000.0,
+      "ingombro_m": 1.9,
+      "ambiente": "microgravita' con fluido (g = 0)",
+      "spin": {
+        "rotore": "Spin",
+        "materiale": "Cu",
+        "k": 1000000.0,
+        "geometria": {
+          "raggio_m": 0.37,
+          "raggio_idrodinamico_m": 0.1575023809343846,
+          "raggio_sfera_equivalente_m": 0.032142489218138254,
+          "volume_m3": 0.0001391,
+          "r2_m2": 0.024807,
+          "lunghezza_filo_m": 4.324
+        },
+        "inerzia": {
+          "massa_kg": 1.2463359999999999,
+          "momento_kgm2": 0.030917857151999996,
+          "densita_kgm3": 8960.0
+        },
+        "attrito": {
+          "beta_Nms": 4.170501462736517e-05,
+          "D_rot_einstein_1_s": 1.026258338054059e-16,
+          "tau_rot_s": 4872067601887412.0,
+          "tempo_inerziale_s": 741.3462728223797,
+          "nota": "D_r = kT/beta: stessa beta del termine dissipativo"
+        },
+        "coppia": {
+          "forza_dichiarata_N": 5.072348205128434e-15,
+          "coppia_dichiarata_Nm": 4.294779022424905e-22,
+          "forza_scattering_N": 3.3356409519815205e-15,
+          "coppia_scattering_Nm": 2.8243015281221095e-22,
+          "rapporto_scattering_dichiarata": 0.6576127696850538,
+          "coppia_su_kT_dichiarata": 0.10034502526558173,
+          "coppia_su_kT_scattering": 0.06598816998901591
+        },
+        "regime_libero": {
+          "omega_dichiarata_rad_s": 1.0297991886104846e-17,
+          "omega_scattering_rad_s": 6.77209096641562e-18,
+          "Pe_r_dichiarata": 0.10034502526558171,
+          "Pe_r_scattering": 0.06598816998901591,
+          "giri_anno_dichiarata": 5.172215888231063e-11,
+          "giri_anno_scattering": 3.401315215668671e-11,
+          "energia_su_kT_dichiarata": 3.8303592174759616e-16,
+          "potenza_per_Pe_r_1_dichiarata_W": 9.96561610656148e-06,
+          "potenza_per_Pe_r_1_scattering_W": 1.5154231435217183e-05,
+          "verdetto_dichiarata": "termico",
+          "verdetto_scattering": "termico",
+          "nota": "Pe_r = omega/D_r = tau/kT: criterio indipendente da beta.  Con tau = F lambda/(2 pi) cresce con l'area intercettata e satura quando la struttura copre il fascio."
+        },
+        "terra": {
+          "g_m_s2": 9.80665,
+          "peso_N": 12.222380934399999,
+          "peso_apparente_N": 10.860731308426999,
+          "spinta_peso_dichiarata": 4.1500491862860085e-16,
+          "spinta_peso_scattering": 2.7291253397227455e-16,
+          "v_sedimentazione_m_s": 3048.523709564982,
+          "Pe_gravitazionale": 4.497777442756708e+20,
+          "galleggia": false
+        },
+        "spazio": {
+          "g_m_s2": 0.0,
+          "peso_apparente_N": 0.0,
+          "spinta_peso": null,
+          "spinta_peso_nota": "indefinito: in g = 0 il peso e' nullo e il rapporto spinta/peso diverge",
+          "v_sedimentazione_m_s": 0.0,
+          "Pe_gravitazionale": 0.0,
+          "numero_di_grashof": 0.0,
+          "nota": "beta e tau non dipendono da g: omega di regime e' identico a terra.  In microgravita' spariscono peso, sedimentazione e convezione, non l'attrito viscoso."
+        },
+        "meccanica": {
+          "resistenza_materiale_Pa": 200000000.0,
+          "omega_limite_rad_s": 403.7934490994573,
+          "velocita_limite_m_s": 149.40357616679918,
+          "tensione_a_regime_Pa": 1.3008180317199788e-31,
+          "margine": 1.5374940623751524e+39,
+          "margine_scattering": 3.555273138233725e+39
+        }
+      },
+      "contro": {
+        "rotore": "Contro-spin",
+        "materiale": "Cu",
+        "k": 1000000.0,
+        "geometria": {
+          "raggio_m": 0.3275,
+          "raggio_idrodinamico_m": 0.23993124015017303,
+          "raggio_sfera_equivalente_m": 0.049266775735083895,
+          "volume_m3": 0.0005009,
+          "r2_m2": 0.057567,
+          "lunghezza_filo_m": 4.2985999999999995
+        },
+        "inerzia": {
+          "massa_kg": 4.488064,
+          "momento_kgm2": 0.25836438028799996,
+          "densita_kgm3": 8960.0
+        },
+        "attrito": {
+          "beta_Nms": 2.892124727269609e-05,
+          "D_rot_einstein_1_s": 1.4798849647264918e-16,
+          "tau_rot_s": 3378640988439318.5,
+          "tempo_inerziale_s": 8933.376138722622,
+          "nota": "D_r = kT/beta: stessa beta del termine dissipativo"
+        },
+        "coppia": {
+          "forza_dichiarata_N": 5.072348205128434e-15,
+          "coppia_dichiarata_Nm": 4.294779022424905e-22,
+          "forza_scattering_N": 3.3356409519815205e-15,
+          "coppia_scattering_Nm": 2.8243015281221095e-22,
+          "rapporto_scattering_dichiarata": 0.6576127696850538,
+          "coppia_su_kT_dichiarata": 0.10034502526558173,
+          "coppia_su_kT_scattering": 0.06598816998901591
+        },
+        "regime_libero": {
+          "omega_dichiarata_rad_s": 1.4849909417563435e-17,
+          "omega_scattering_rad_s": 9.765490061656055e-18,
+          "Pe_r_dichiarata": 0.10034502526558174,
+          "Pe_r_scattering": 0.06598816998901591,
+          "giri_anno_dichiarata": 7.458438332229591e-11,
+          "giri_anno_scattering": 4.904764289182675e-11,
+          "energia_su_kT_dichiarata": 6.655876818579673e-15,
+          "potenza_per_Pe_r_1_dichiarata_W": 9.96561610656148e-06,
+          "potenza_per_Pe_r_1_scattering_W": 1.5154231435217183e-05,
+          "verdetto_dichiarata": "termico",
+          "verdetto_scattering": "termico",
+          "nota": "Pe_r = omega/D_r = tau/kT: criterio indipendente da beta.  Con tau = F lambda/(2 pi) cresce con l'area intercettata e satura quando la struttura copre il fascio."
+        },
+        "terra": {
+          "g_m_s2": 9.80665,
+          "peso_N": 44.01287282559999,
+          "peso_apparente_N": 39.109563712372996,
+          "spinta_peso_dichiarata": 1.1524692389945775e-16,
+          "spinta_peso_scattering": 7.578784882320502e-17,
+          "v_sedimentazione_m_s": 7206.324314573157,
+          "Pe_gravitazionale": 2.4672976165365466e+21,
+          "galleggia": false
+        },
+        "spazio": {
+          "g_m_s2": 0.0,
+          "peso_apparente_N": 0.0,
+          "spinta_peso": null,
+          "spinta_peso_nota": "indefinito: in g = 0 il peso e' nullo e il rapporto spinta/peso diverge",
+          "v_sedimentazione_m_s": 0.0,
+          "Pe_gravitazionale": 0.0,
+          "numero_di_grashof": 0.0,
+          "nota": "beta e tau non dipendono da g: omega di regime e' identico a terra.  In microgravita' spariscono peso, sedimentazione e convezione, non l'attrito viscoso."
+        },
+        "meccanica": {
+          "resistenza_materiale_Pa": 200000000.0,
+          "omega_limite_rad_s": 456.1941257001502,
+          "velocita_limite_m_s": 149.4035761667992,
+          "tensione_a_regime_Pa": 2.1192306544811083e-31,
+          "margine": 9.437387080877698e+38,
+          "margine_scattering": 2.1822841209497675e+39
+        }
+      },
+      "accoppiato": {
+        "I1_su_I2": 0.11966764581687196,
+        "target_45_376": 0.1196808510638298,
+        "scarto_rapporto_inerzia": -1.3205246957831429e-05,
+        "dichiarata": {
+          "omega_spin_rad_s": 2.2459838769637728e-17,
+          "omega_contro_rad_s": -2.687716030989057e-18,
+          "omega_contro_su_spin": -0.11966764581687196,
+          "coppia_di_scambio_Nm": 5.072100021735144e-22,
+          "potenza_dissipata_W": 1.062339056088018e-38,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "scattering": {
+          "omega_spin_rad_s": 1.4769876779981218e-17,
+          "omega_contro_rad_s": -1.767476383265634e-18,
+          "omega_contro_su_spin": -0.11966764581687198,
+          "coppia_di_scambio_Nm": 3.335477743412869e-22,
+          "potenza_dissipata_W": 4.5941336360333824e-39,
+          "denominatore_Nms": 3.8244077052154e-05
+        },
+        "nota": "il rapporto I1/I2 dipende solo dalla geometria (la densita' si semplifica): 45/376 e' una proprieta' della forma, non del materiale ne' della scala."
+      },
+      "riferimento_nucleo": {
+        "R_disco_m": 0.3275,
+        "beta_telaio_Nms": 2.892124727269609e-05,
+        "coppia_ottica_Nm": 2.8243015281221095e-22,
+        "omega_ss_rad_s": 9.765490061656055e-18,
+        "nota": "v5_nucleo applica R_DISC a entrambi i rotori; qui ogni rotore usa il proprio raggio esterno (3.70 u.a. Spin, 3.275 u.a. Contro-spin).  Lo scarto fra i due omega e' il solo fattore geometrico (R_rotore/R_DISC)^3."
+      }
+    }
+  }
+}
