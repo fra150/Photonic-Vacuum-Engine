@@ -1,0 +1,30 @@
+{
+  "unita_blender_in_nm": 100.0,
+  "geometria": {
+    "lunghezza_fili_spin_ua": 43.2401039051275,
+    "lunghezza_fili_contro_ua": 42.985964414921696,
+    "volume_spin_ua3": 0.13910301979525924,
+    "volume_contro_ua3": 0.500860575178214,
+    "massa_spin_kg": 1.2463630573655231e-18,
+    "massa_contro_kg": 4.487710753596799e-18,
+    "r2_medio_spin_ua2": 2.4807,
+    "r2_medio_contro_ua2": 5.7567,
+    "I_spin_kg_m2": 3.091852836406654e-32,
+    "I_contro_kg_m2": 2.58344044952307e-31,
+    "rapporto_I1_I2": 0.11967966348817687
+  },
+  "relazioni": {
+    "copertura_SU2": "U(2pi) = -I ; U(4pi) = +I",
+    "bilancio_momento_angolare": "omega_2 = -(I_1/I_2) omega_1",
+    "coppia_nulla": "tau_net = I_1 alpha_1 + I_2 alpha_2 = 0",
+    "spinta_assiale": "F_z = (P/c)(eta_s + eta_c cos(alpha))",
+    "coppia_fotonica": "tau_max = P/omega_ottica"
+  },
+  "valori": {
+    "eta_s": 0.7,
+    "eta_c": 0.85,
+    "alpha_deg": 14.999999999999998,
+    "F_z_fN_per_uW": 5.073633147721508,
+    "rapporto_animazione": 0.85
+  }
+}

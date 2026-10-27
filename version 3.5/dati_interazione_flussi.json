@@ -1,0 +1,33 @@
+{
+  "nota": "modello cinematico 2D; non e' una validazione fisica del dispositivo",
+  "scale": {
+    "unita_blender_in_nm": 100.0,
+    "raggio_disco_nm": 320.0,
+    "rho_kg_m3": 998.2,
+    "a_core_nm": 320.0,
+    "d_riferimento_nm": 950.0
+  },
+  "regimi": {
+    "animazione (1 giro in 10 s)": {
+      "omega_rad_s": 0.6283185307179586,
+      "Gamma_m2_s": 4.0425899626862013e-13,
+      "V_trasl_d_riferimento_m_s": 6.772612373212523e-08,
+      "gamma_dot_max_1_s": 0.5900960910261245,
+      "E_int_d_riferimento_J_m": 2.8251548291098495e-23
+    },
+    "dispositivo 1 kHz": {
+      "omega_rad_s": 6283.185307179586,
+      "Gamma_m2_s": 4.042589962686201e-09,
+      "V_trasl_d_riferimento_m_s": 0.0006772612373212522,
+      "gamma_dot_max_1_s": 5900.960910263331,
+      "E_int_d_riferimento_J_m": 2.825154829109849e-15
+    },
+    "dispositivo 1 MHz": {
+      "omega_rad_s": 6283185.307179586,
+      "Gamma_m2_s": 4.042589962686201e-06,
+      "V_trasl_d_riferimento_m_s": 0.6772612373212522,
+      "gamma_dot_max_1_s": 5900960.910260712,
+      "E_int_d_riferimento_J_m": 2.825154829109849e-09
+    }
+  }
+}
