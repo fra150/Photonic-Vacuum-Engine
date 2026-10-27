@@ -1,0 +1,102 @@
+{
+  "confronto": {
+    "nano_240nm": {
+      "Rame": {
+        "massa_totale_kg": 2.820805256112609e-19,
+        "I_tot_kgm2": 1.9101964357646655e-33,
+        "omega_rottura_rad_s": 1245029801.3899937,
+        "v_periferica_rottura_m_s": 149.40357616679924,
+        "alpha_rad_s2": 40775974.67699258,
+        "t_critico_s": 30.533416092503334,
+        "t_critico_ore": 0.008481504470139815,
+        "energia_rotazionale_J": 1.480496989524946e-15,
+        "accelerazione_scattering_g": 0.3325499122279745
+      },
+      "Grafene/CNT": {
+        "massa_totale_kg": 6.926084334205067e-20,
+        "I_tot_kgm2": 4.6902144628150265e-34,
+        "omega_rottura_rad_s": 39727607885.23302,
+        "v_periferica_rottura_m_s": 4767.312946227961,
+        "alpha_rad_s2": 166069424.13902432,
+        "t_critico_s": 239.222891818877,
+        "t_critico_ore": 0.06645080328302139,
+        "energia_rotazionale_J": 3.701242473812364e-13,
+        "accelerazione_scattering_g": 1.3543850970739324
+      },
+      "rapporto_omega_rottura": 31.90896140869862,
+      "nota": "sqrt((sigma_graf/rho_graf)/(sigma_cu/rho_cu)) = 31.9090; il Grafene vince di oltre un ordine di grandezza"
+    },
+    "macro_1m": {
+      "Rame": {
+        "massa_totale_kg": 20.405130614240512,
+        "I_tot_kgm2": 2.398953455248754,
+        "omega_rottura_rad_s": 298.8071523335984,
+        "v_periferica_rottura_m_s": 149.4035761667992,
+        "alpha_rad_s2": 1.1773056796674073e-22,
+        "t_critico_s": 2.5380592100601473e+24,
+        "t_critico_ore": 7.050164472389298e+20,
+        "energia_rotazionale_J": 107096.13639503367,
+        "accelerazione_scattering_g": 1.666937214817377e-17
+      },
+      "Grafene/CNT": {
+        "massa_totale_kg": 5.0101883204608395,
+        "I_tot_kgm2": 0.5890287501726851,
+        "omega_rottura_rad_s": 9534.625892455922,
+        "v_periferica_rottura_m_s": 4767.312946227961,
+        "alpha_rad_s2": 4.794844949918169e-22,
+        "t_critico_s": 1.98851599833664e+25,
+        "t_critico_ore": 5.523655550935111e+21,
+        "energia_rotazionale_J": 26774034.098758407,
+        "accelerazione_scattering_g": 6.788980656710773e-17
+      },
+      "rapporto_omega_rottura": 31.908961408698623,
+      "nota": "sqrt((sigma_graf/rho_graf)/(sigma_cu/rho_cu)) = 31.9090; il Grafene vince di oltre un ordine di grandezza"
+    }
+  },
+  "sintesi": {
+    "nano_240nm|Rame": {
+      "omega_rottura_rad_s": 1245029801.3899937,
+      "t_critico_s": 30.533416092503334,
+      "t_critico_ore": 0.008481504470139815,
+      "rottura_entro_1h": true,
+      "pulsata_supera": false,
+      "pulsata_t_superamento_s": null,
+      "pulsata_delta_v_m_s": 11.727277345913746,
+      "potenza_sicura_W": 8.490938846636078e-06,
+      "accelerazione_g": 0.3325499122279745
+    },
+    "nano_240nm|Grafene/CNT": {
+      "omega_rottura_rad_s": 39727607885.23302,
+      "t_critico_s": 239.222891818877,
+      "t_critico_ore": 0.06645080328302139,
+      "rottura_entro_1h": true,
+      "pulsata_supera": false,
+      "pulsata_t_superamento_s": null,
+      "pulsata_delta_v_m_s": 47.76200228154302,
+      "potenza_sicura_W": 6.652471963817493e-05,
+      "accelerazione_g": 1.3543850970739324
+    },
+    "macro_1m|Rame": {
+      "omega_rottura_rad_s": 298.8071523335984,
+      "t_critico_s": 2.5380592100601473e+24,
+      "t_critico_ore": 7.050164472389298e+20,
+      "rottura_entro_1h": false,
+      "pulsata_supera": false,
+      "pulsata_t_superamento_s": null,
+      "pulsata_delta_v_m_s": 5.878406313633262e-16,
+      "potenza_sicura_W": 7.05800670205825e+17,
+      "accelerazione_g": 1.666937214817377e-17
+    },
+    "macro_1m|Grafene/CNT": {
+      "omega_rottura_rad_s": 9534.625892455922,
+      "t_critico_s": 1.98851599833664e+25,
+      "t_critico_ore": 5.523655550935111e+21,
+      "rottura_entro_1h": false,
+      "pulsata_supera": false,
+      "pulsata_t_superamento_s": null,
+      "pulsata_delta_v_m_s": 2.3941145713706026e-15,
+      "potenza_sicura_W": 5.529799772905005e+18,
+      "accelerazione_g": 6.788980656710773e-17
+    }
+  }
+}

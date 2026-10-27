@@ -1,0 +1,24 @@
+{
+  "riferimento": "Rame V4 vs composito Grafene/CNT",
+  "Rame": {
+    "rho_kg_m3": 8960.0,
+    "sigma_max_Pa": 200000000.0,
+    "E_Pa": 110000000000.0,
+    "nota": "riferimento V4: duttile, si snerva a 200 MPa"
+  },
+  "Grafene/CNT": {
+    "rho_kg_m3": 2200.0,
+    "sigma_max_Pa": 50000000000.0,
+    "E_Pa": 1000000000000.0,
+    "nota": "composito Grafene/Nanotubi di Carbonio, valore conservativo"
+  },
+  "rapporto_densita": 0.24553571428571427,
+  "rapporto_resistenza": 250.0,
+  "guadagno_omega": 31.908961408698627,
+  "ambiente": {
+    "g_m_s2": 0.0,
+    "eta_Pa_s": 0.0,
+    "beta_Nms": 0.0,
+    "conseguenza": "omega_ss = tau/beta non esiste: nessuna velocita' di regime"
+  }
+}
