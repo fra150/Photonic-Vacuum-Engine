@@ -1,0 +1,66 @@
+{
+ "titolo": "A. Chiusura dei residui della V5",
+ "rapporti": {
+  "razionale_45_376": 0.1196808510638298,
+  "razionale_376_45": 8.355555555555556,
+  "inverso_esatto_di_45_376": 8.355555555555556,
+  "I2_su_I1_scena_V4": 8.353816300129365,
+  "scarto_scena_su_target": -0.00020815556962394677,
+  "target_arrotondato_V5": 8.3565,
+  "scarto_arrotondamento": 0.0001130319148936465,
+  "inverso_del_target_arrotondato": 0.11966732483695326,
+  "scarto_riportato_abs": -1.3526226876531267e-05,
+  "scarto_riportato_rel": -0.00011301914012395997,
+  "scarto_vero_scena_abs": 2.491742242650974e-05
+ },
+ "raggi": {
+  "r_volume_materiale_nm": 60.255217803943694,
+  "r_inviluppo_nm": 423.5442697447331,
+  "r_idrodinamico_nm": 259.3395155338985,
+  "r_eff_v5_nm": 239.931240150173,
+  "massa_inviluppo_su_massa_materiale": 0.698365341706384,
+  "volume_inviluppo_su_volume_materiale": 0.6983653417063841
+ },
+ "massa": {
+  "massa_materiale_kg": 8.210707875267266e-18,
+  "massa_V5_kg": 5.734073810962322e-18,
+  "rapporto": 0.698365341706384,
+  "I_materiale": 4.6185477091833655e-31,
+  "I_V5": 3.092e-32,
+  "forza_N": 4.521976241576646e-17,
+  "peso_1g_N": 8.051953838498973e-17,
+  "spinta_su_peso_strutturale": 0.5615998715685164,
+  "spinta_su_peso_V5": 0.8041634342796922,
+  "spinta_su_peso_effettivo_in_acqua": 0.6320097024861097,
+  "galleggiamento_N": 8.970379823202762e-18,
+  "nota": "in orbita il peso e' nullo e il rapporto spinta/peso non e' definito: il numero ha senso solo a 1 g e va confrontato con il peso effettivo"
+ },
+ "bilancio_potenza": {
+  "P_incidente_W": 1e-06,
+  "P_intercettata_W": 1.3556543724798645e-08,
+  "P_assorbita_W": 1.1703645462059202e-08,
+  "frazione_intercettata": 0.013556543724798645,
+  "frazione_assorbita": 0.011703645462059202,
+  "tau_da_intercettata_Nm": 3.828776715800301e-24,
+  "tau_da_assorbita_Nm": 3.3054623763093198e-24,
+  "tau_V5_Nm": 2.6103646371378617e-24,
+  "scarto_tau": 0.2662837709652699,
+  "P_meccanica_estratta_W": 1.685191634934699e-26,
+  "efficienza_ottico_meccanica": 1.4398860939505915e-18
+ },
+ "pulsata": {
+  "tempo_inerziale_I_su_beta_s": 1.1439354024288708e-09,
+  "frequenza_di_taglio_Hz": 139129309.8840793,
+  "periodo_naturale_coppia_gradi": 180.0,
+  "verdetto": "la pulsazione e' imposta dal laser, non e' una conseguenza della dinamica: il rotore segue la coppia entro I/beta = 6e-11 s, quindi qualunque impulso piu' lungo di 1 ns e' quasi statico. La sola grandezza che la pulsazione cambia e' la temperatura media.",
+  "duty_cycle_per_non_fondere_in_vuoto": 0.13246663416275137
+ },
+ "verifica_sezioni": {
+  "sigma_pr_V6": 1.0647284543474059e-14,
+  "sigma_pr_V5": 7.259e-15,
+  "scarto": 0.46677015339221084,
+  "F_V6": 4.521976241576646e-17,
+  "F_V5": 3.082970814745448e-17,
+  "scarto_F": 0.46675934133032415
+ }
+}

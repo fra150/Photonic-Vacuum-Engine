@@ -1,0 +1,36 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{Risultati in otto righe}{1}{section*.1}%
+\contentsline {section}{\numberline {1}Tesi e criteri di giudizio}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Cosa cambia rispetto alla V5}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Chiusura dei residui}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Il numero 0{,}119667646 non \`e un arrotondamento di 45/376}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Il raggio equivalente non \`e un raggio}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}La massa: la V5 contava solo i fili}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}La pulsata non \`e una propriet\`a del rotore}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Il modello unico}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Perch\'e sono due limiti}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}L'identit\`a che la V5 violava}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Audit ottico}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Il raggio dei fili, e perch\'e cambia tutto}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Modelli usati e loro stato}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Dipendenza dalla dimensione e ossidazione}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}L'assemblaggio, e ci\`o che manca}{8}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Bilancio termico}{9}{section.5}%
+\contentsline {section}{\numberline {6}Baseline a pari massa}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}La coppia non \`e un risultato: \`e un'ipotesi dichiarata}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Che cosa fanno i fili, le lenti e il Contro-spin}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}La struttura alternativa}{12}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Matrice dei regimi}{12}{section.7}%
+\contentsline {section}{\numberline {8}Materiali}{14}{section.8}%
+\contentsline {section}{\numberline {9}Leve di progetto}{15}{section.9}%
+\contentsline {section}{\numberline {10}Controllo esterno: la silice a 1--6\,GHz}{15}{section.10}%
+\contentsline {section}{\numberline {11}OAM come analisi di sensibilit\`a}{17}{section.11}%
+\contentsline {section}{\numberline {12}Limiti, falsificabilit\`a, protocollo}{17}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Cosa la V6 non ha fatto}{17}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Come smentire la V6}{18}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Protocollo per l'audit full-wave}{18}{subsection.12.3}%
+\contentsline {section}{\numberline {A}Il ciclo a 720$^\circ $ e il rapporto 45/376}{18}{appendix.A}%
+\contentsline {section}{\numberline {B}Materiale escluso e suo destino}{19}{appendix.B}%
+\contentsline {section}{\numberline {C}Codice, dati e riproducibilit\`a}{19}{appendix.C}%
+\contentsline {section}{Ringraziamenti}{19}{section*.3}%

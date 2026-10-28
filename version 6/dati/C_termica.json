@@ -1,0 +1,572 @@
+{
+ "titolo": "C. Bilancio termico",
+ "nota": "P_ass = P_diss + P_out. In regime stazionario P_diss = beta omega^2, che e' trascurabile: tutta la potenza assorbita diventa calore.",
+ "casi": [
+  {
+   "materiale": "rame",
+   "potenza_W": 1e-06,
+   "P_abs_W": 1.1703645462059202e-08,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 8.210707875267266e-18,
+   "cp": 385.0,
+   "dT_fluido_K": 0.02576115805636557,
+   "T_fluido_K": 310.02576115805635,
+   "T_vuoto_emiss_limpido_K": 2249.660939289636,
+   "T_vuoto_emiss_ossidato_K": 1504.981091209109,
+   "emiss_limpido": 0.03,
+   "emiss_ossidato": 0.15,
+   "Tm_K": 1358.0,
+   "margine_limpido": 0.6036465212525798,
+   "margine_ossidato": 0.9023369183389383,
+   "potenza_fusione_vuoto_limpido_W": 1.5503425217931416e-09,
+   "potenza_fusione_vuoto_ossidato_W": 7.751712608965708e-09,
+   "tempo_adiabatico_a_Tm_s": 0.0002830619249576922,
+   "potenza_massima_fluido_W": 0.0038818130683876627,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "rame",
+   "potenza_W": 0.0001,
+   "P_abs_W": 1.1703645462059203e-06,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 8.210707875267266e-18,
+   "cp": 385.0,
+   "dT_fluido_K": 2.576115805636557,
+   "T_fluido_K": 312.57611580563656,
+   "T_vuoto_emiss_limpido_K": 7113.417596781102,
+   "T_vuoto_emiss_ossidato_K": 4757.046211109723,
+   "emiss_limpido": 0.03,
+   "emiss_ossidato": 0.15,
+   "Tm_K": 1358.0,
+   "margine_limpido": 0.1909068294562813,
+   "margine_ossidato": 0.2854712650948173,
+   "potenza_fusione_vuoto_limpido_W": 1.5503425217931416e-09,
+   "potenza_fusione_vuoto_ossidato_W": 7.751712608965708e-09,
+   "tempo_adiabatico_a_Tm_s": 2.8306192495769217e-06,
+   "potenza_massima_fluido_W": 0.0038818130683876627,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "rame",
+   "potenza_W": 0.01,
+   "P_abs_W": 0.00011703645462059202,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 8.210707875267266e-18,
+   "cp": 385.0,
+   "dT_fluido_K": 257.6115805636557,
+   "T_fluido_K": 567.6115805636557,
+   "T_vuoto_emiss_limpido_K": 22494.58147264274,
+   "T_vuoto_emiss_ossidato_K": 15043.033816920472,
+   "emiss_limpido": 0.03,
+   "emiss_ossidato": 0.15,
+   "Tm_K": 1358.0,
+   "margine_limpido": 0.06037009408917255,
+   "margine_ossidato": 0.09027434336234194,
+   "potenza_fusione_vuoto_limpido_W": 1.5503425217931416e-09,
+   "potenza_fusione_vuoto_ossidato_W": 7.751712608965708e-09,
+   "tempo_adiabatico_a_Tm_s": 2.8306192495769215e-08,
+   "potenza_massima_fluido_W": 0.0038818130683876627,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "rame",
+   "potenza_W": 0.1,
+   "P_abs_W": 0.0011703645462059202,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 8.210707875267266e-18,
+   "cp": 385.0,
+   "dT_fluido_K": 2576.115805636557,
+   "T_fluido_K": 2886.115805636557,
+   "T_vuoto_emiss_limpido_K": 40001.650745608466,
+   "T_vuoto_emiss_ossidato_K": 26750.716215665907,
+   "emiss_limpido": 0.03,
+   "emiss_ossidato": 0.15,
+   "Tm_K": 1358.0,
+   "margine_limpido": 0.033948598987482696,
+   "margine_ossidato": 0.05076499593699552,
+   "potenza_fusione_vuoto_limpido_W": 1.5503425217931416e-09,
+   "potenza_fusione_vuoto_ossidato_W": 7.751712608965708e-09,
+   "tempo_adiabatico_a_Tm_s": 2.8306192495769216e-09,
+   "potenza_massima_fluido_W": 0.0038818130683876627,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "silice",
+   "potenza_W": 1e-06,
+   "P_abs_W": 1.858682738762321e-15,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 2.0160220229450875e-18,
+   "cp": 740.0,
+   "dT_fluido_K": 4.091188507471244e-09,
+   "T_fluido_K": 310.0000000040912,
+   "T_vuoto_emiss_limpido_K": 310.0012043438162,
+   "T_vuoto_emiss_ossidato_K": 310.0012043438162,
+   "emiss_limpido": 0.85,
+   "emiss_ossidato": 0.85,
+   "Tm_K": 1983.0,
+   "margine_limpido": 6.396749342304793,
+   "margine_ossidato": 6.396749342304793,
+   "potenza_fusione_vuoto_limpido_W": 2.0014215520110865e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.0014215520110865e-07,
+   "tempo_adiabatico_a_Tm_s": 1342.8195855030413,
+   "potenza_massima_fluido_W": 24442.77495827485,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "silice",
+   "potenza_W": 0.0001,
+   "P_abs_W": 1.8586827387623213e-13,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 2.0160220229450875e-18,
+   "cp": 740.0,
+   "dT_fluido_K": 4.0911885074712447e-07,
+   "T_fluido_K": 310.00000040911885,
+   "T_vuoto_emiss_limpido_K": 310.1203649634118,
+   "T_vuoto_emiss_ossidato_K": 310.1203649634118,
+   "emiss_limpido": 0.85,
+   "emiss_ossidato": 0.85,
+   "Tm_K": 1983.0,
+   "margine_limpido": 6.394291455944712,
+   "margine_ossidato": 6.394291455944712,
+   "potenza_fusione_vuoto_limpido_W": 2.0014215520110865e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.0014215520110865e-07,
+   "tempo_adiabatico_a_Tm_s": 13.42819585503041,
+   "potenza_massima_fluido_W": 24442.77495827485,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "silice",
+   "potenza_W": 0.01,
+   "P_abs_W": 1.858682738762321e-11,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 2.0160220229450875e-18,
+   "cp": 740.0,
+   "dT_fluido_K": 4.091188507471244e-05,
+   "T_fluido_K": 310.0000409118851,
+   "T_vuoto_emiss_limpido_K": 321.3992024681853,
+   "T_vuoto_emiss_ossidato_K": 321.3992024681853,
+   "emiss_limpido": 0.85,
+   "emiss_ossidato": 0.85,
+   "Tm_K": 1983.0,
+   "margine_limpido": 6.169897077439989,
+   "margine_ossidato": 6.169897077439989,
+   "potenza_fusione_vuoto_limpido_W": 2.0014215520110865e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.0014215520110865e-07,
+   "tempo_adiabatico_a_Tm_s": 0.13428195855030411,
+   "potenza_massima_fluido_W": 24442.77495827485,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "silice",
+   "potenza_W": 0.1,
+   "P_abs_W": 1.8586827387623212e-10,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 2.0160220229450875e-18,
+   "cp": 740.0,
+   "dT_fluido_K": 0.0004091188507471245,
+   "T_fluido_K": 310.00040911885077,
+   "T_vuoto_emiss_limpido_K": 391.89250971790324,
+   "T_vuoto_emiss_ossidato_K": 391.89250971790324,
+   "emiss_limpido": 0.85,
+   "emiss_ossidato": 0.85,
+   "Tm_K": 1983.0,
+   "margine_limpido": 5.060060988222069,
+   "margine_ossidato": 5.060060988222069,
+   "potenza_fusione_vuoto_limpido_W": 2.0014215520110865e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.0014215520110865e-07,
+   "tempo_adiabatico_a_Tm_s": 0.01342819585503041,
+   "potenza_massima_fluido_W": 24442.77495827485,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "grafene",
+   "potenza_W": 1e-06,
+   "P_abs_W": 9.578239594574329e-09,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 1.191285740831188e-18,
+   "cp": 700.0,
+   "dT_fluido_K": 0.02108287925308994,
+   "T_fluido_K": 310.0210828792531,
+   "T_vuoto_emiss_limpido_K": 1883.3740569487722,
+   "T_vuoto_emiss_ossidato_K": 944.2684144708703,
+   "emiss_limpido": 0.05,
+   "emiss_ossidato": 0.8,
+   "Tm_K": 3900.0,
+   "margine_limpido": 2.070751683984824,
+   "margine_ossidato": 4.130181567266974,
+   "potenza_fusione_vuoto_limpido_W": 1.7623791428458425e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.819806628553348e-06,
+   "tempo_adiabatico_a_Tm_s": 0.00031255232625466804,
+   "potenza_massima_fluido_W": 0.0047431851598421435,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "grafene",
+   "potenza_W": 0.0001,
+   "P_abs_W": 9.578239594574329e-07,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 1.191285740831188e-18,
+   "cp": 700.0,
+   "dT_fluido_K": 2.108287925308994,
+   "T_fluido_K": 312.108287925309,
+   "T_vuoto_emiss_limpido_K": 5954.669448523743,
+   "T_vuoto_emiss_ossidato_K": 2977.416732433484,
+   "emiss_limpido": 0.05,
+   "emiss_ossidato": 0.8,
+   "Tm_K": 3900.0,
+   "margine_limpido": 0.654948193802239,
+   "margine_ossidato": 1.309860308608018,
+   "potenza_fusione_vuoto_limpido_W": 1.7623791428458425e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.819806628553348e-06,
+   "tempo_adiabatico_a_Tm_s": 3.1255232625466804e-06,
+   "potenza_massima_fluido_W": 0.0047431851598421435,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "grafene",
+   "potenza_W": 0.01,
+   "P_abs_W": 9.578239594574329e-05,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 1.191285740831188e-18,
+   "cp": 700.0,
+   "dT_fluido_K": 210.8287925308994,
+   "T_fluido_K": 520.8287925308994,
+   "T_vuoto_emiss_limpido_K": 18830.283937341686,
+   "T_vuoto_emiss_ossidato_K": 9415.144562117155,
+   "emiss_limpido": 0.05,
+   "emiss_ossidato": 0.8,
+   "Tm_K": 3900.0,
+   "margine_limpido": 0.20711318071343812,
+   "margine_ossidato": 0.4142262473262565,
+   "potenza_fusione_vuoto_limpido_W": 1.7623791428458425e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.819806628553348e-06,
+   "tempo_adiabatico_a_Tm_s": 3.125523262546681e-08,
+   "potenza_massima_fluido_W": 0.0047431851598421435,
+   "P_dissipata_meccanica_W": null
+  },
+  {
+   "materiale": "grafene",
+   "potenza_W": 0.1,
+   "P_abs_W": 0.0009578239594574329,
+   "area_m2": 2.687054732574912e-13,
+   "r_equivalente_nm": 60.255217803943694,
+   "massa_kg": 1.191285740831188e-18,
+   "cp": 700.0,
+   "dT_fluido_K": 2108.287925308994,
+   "T_fluido_K": 2418.287925308994,
+   "T_vuoto_emiss_limpido_K": 33485.50565753648,
+   "T_vuoto_emiss_ossidato_K": 16742.75328995565,
+   "emiss_limpido": 0.05,
+   "emiss_ossidato": 0.8,
+   "Tm_K": 3900.0,
+   "margine_limpido": 0.11646830243168925,
+   "margine_ossidato": 0.23293659844702463,
+   "potenza_fusione_vuoto_limpido_W": 1.7623791428458425e-07,
+   "potenza_fusione_vuoto_ossidato_W": 2.819806628553348e-06,
+   "tempo_adiabatico_a_Tm_s": 3.1255232625466805e-09,
+   "potenza_massima_fluido_W": 0.0047431851598421435,
+   "P_dissipata_meccanica_W": null
+  }
+ ],
+ "efficienza": {
+  "P_abs_W": 1.1703645462059202e-08,
+  "tau_Nm": 3.3054623763093198e-24,
+  "omega_ss_rad_s": 0.005098202439128297,
+  "P_meccanica_W": 1.685191634934699e-26,
+  "efficienza_ottico_meccanica": 1.4398860939505915e-18,
+  "nota": "il rotore converte in rotazione una frazione ~1e-18 della potenza assorbita: termicamente e' una resistenza, non un motore"
+ },
+ "sweep": [
+  {
+   "P_W": 1e-06,
+   "P_abs_W": 1.1703645462059202e-08,
+   "dT_fluido_K": 0.02576115805636557,
+   "T_vuoto_limpido_K": 2249.660939289636,
+   "T_vuoto_ossidato_K": 1504.981091209109
+  },
+  {
+   "P_W": 1.3433993325988987e-06,
+   "P_abs_W": 1.572266950270446e-08,
+   "dT_fluido_K": 0.03460752253989625,
+   "T_vuoto_limpido_K": 2421.911907821595,
+   "T_vuoto_ossidato_K": 1620.0646725788934
+  },
+  {
+   "P_W": 1.8047217668271703e-06,
+   "P_abs_W": 2.1121823716606277e-08,
+   "dT_fluido_K": 0.04649172268299806,
+   "T_vuoto_limpido_K": 2607.367060735327,
+   "T_vuoto_ossidato_K": 1743.9997547267506
+  },
+  {
+   "P_W": 2.4244620170823308e-06,
+   "P_abs_W": 2.837504388416052e-08,
+   "dT_fluido_K": 0.0624569492237128,
+   "T_vuoto_limpido_K": 2807.0355376162147,
+   "T_vuoto_ossidato_K": 1877.4569682372055
+  },
+  {
+   "P_W": 3.257020655659783e-06,
+   "P_abs_W": 3.811901501644571e-08,
+   "dT_fluido_K": 0.08390462390329909,
+   "T_vuoto_limpido_K": 3022.004206834398,
+   "T_vuoto_ossidato_K": 2021.1597566314958
+  },
+  {
+   "P_W": 4.37547937507418e-06,
+   "P_abs_W": 5.1209059332420556e-08,
+   "dT_fluido_K": 0.1127174157536536,
+   "T_vuoto_limpido_K": 3253.4435324728206,
+   "T_vuoto_ossidato_K": 2175.888136840275
+  },
+  {
+   "P_W": 5.878016072274912e-06,
+   "P_abs_W": 6.879421613019132e-08,
+   "dT_fluido_K": 0.15142450109573113,
+   "T_vuoto_limpido_K": 3502.613907725176,
+   "T_vuoto_ossidato_K": 2342.4828030367594
+  },
+  {
+   "P_W": 7.896522868499733e-06,
+   "P_abs_W": 9.241810403596362e-08,
+   "dT_fluido_K": 0.20342357371112688,
+   "T_vuoto_limpido_K": 3770.872487122748,
+   "T_vuoto_ossidato_K": 2521.8495896152813
+  },
+  {
+   "P_W": 1.0608183551394482e-05,
+   "P_abs_W": 1.241544192819691e-07,
+   "dT_fluido_K": 0.27327909315841065,
+   "T_vuoto_limpido_K": 4059.6805530851298,
+   "T_vuoto_ossidato_K": 2714.964312205965
+  },
+  {
+   "P_W": 1.4251026703029963e-05,
+   "P_abs_W": 1.6678896400260113e-07,
+   "dT_fluido_K": 0.3671229513622412,
+   "T_vuoto_limpido_K": 4370.61145554,
+   "T_vuoto_ossidato_K": 2922.878008659899
+  },
+  {
+   "P_W": 1.9144819761699577e-05,
+   "P_abs_W": 2.240641829259566e-07,
+   "dT_fluido_K": 0.49319272784177387,
+   "T_vuoto_limpido_K": 4705.359166753552,
+   "T_vuoto_ossidato_K": 3146.7226049448273
+  },
+  {
+   "P_W": 2.571913809059347e-05,
+   "P_abs_W": 3.0100767380204824e-07,
+   "dT_fluido_K": 0.6625547814252706,
+   "T_vuoto_limpido_K": 5065.747497086205,
+   "T_vuoto_ossidato_K": 3387.717033891608
+  },
+  {
+   "P_W": 3.455107294592218e-05,
+   "P_abs_W": 4.0437350809281854e-07,
+   "dT_fluido_K": 0.8900756511769176,
+   "T_vuoto_limpido_K": 5453.740021167355,
+   "T_vuoto_ossidato_K": 3647.1738377616703
+  },
+  {
+   "P_W": 4.641588833612772e-05,
+   "P_abs_W": 5.432351008925678e-07,
+   "dT_fluido_K": 1.1957270357536014,
+   "T_vuoto_limpido_K": 5871.450767996904,
+   "T_vuoto_ossidato_K": 3926.5062887008926
+  },
+  {
+   "P_W": 6.235507341273913e-05,
+   "P_abs_W": 7.297816719833727e-07,
+   "dT_fluido_K": 1.6063389018018512,
+   "T_vuoto_limpido_K": 6321.155732758782,
+   "T_vuoto_ossidato_K": 4227.2360643398815
+  },
+  {
+   "P_W": 8.376776400682924e-05,
+   "P_abs_W": 9.803882110853732e-07,
+   "dT_fluido_K": 2.157954608608259,
+   "T_vuoto_limpido_K": 6805.3052727014165,
+   "T_vuoto_ossidato_K": 4551.001519127103
+  },
+  {
+   "P_W": 0.00011253355826007646,
+   "P_abs_W": 1.3170528684599185e-06,
+   "dT_fluido_K": 2.8989947809830525,
+   "T_vuoto_limpido_K": 7326.5374543314165,
+   "T_vuoto_ossidato_K": 4899.566595470847
+  },
+  {
+   "P_W": 0.00015117750706156616,
+   "P_abs_W": 1.7693279444865216e-06,
+   "dT_fluido_K": 3.8945076539803276,
+   "T_vuoto_limpido_K": 7887.692424409753,
+   "T_vuoto_ossidato_K": 5274.830422448355
+  },
+  {
+   "P_W": 0.0002030917620904735,
+   "P_abs_W": 2.376913979771777e-06,
+   "dT_fluido_K": 5.231878983158481,
+   "T_vuoto_limpido_K": 8491.827882866108,
+   "T_vuoto_ossidato_K": 5678.837653744732
+  },
+  {
+   "P_W": 0.00027283333764867665,
+   "P_abs_W": 3.1931446540704003e-06,
+   "dT_fluido_K": 7.028502734213314,
+   "T_vuoto_limpido_K": 9142.235741789631,
+   "T_vuoto_ossidato_K": 6113.789600639161
+  },
+  {
+   "P_W": 0.0003665241237079626,
+   "P_abs_W": 4.289668397169923e-06,
+   "dT_fluido_K": 9.442085882311712,
+   "T_vuoto_limpido_K": 9842.460061147847,
+   "T_vuoto_ossidato_K": 6582.056220289944
+  },
+  {
+   "P_W": 0.0004923882631706737,
+   "P_abs_W": 5.762737661828667e-06,
+   "dT_fluido_K": 12.68449187263905,
+   "T_vuoto_limpido_K": 10596.316358866992,
+   "T_vuoto_ossidato_K": 7086.189024312175
+  },
+  {
+   "P_W": 0.0006614740641230146,
+   "P_abs_W": 7.741657928843179e-06,
+   "dT_fluido_K": 17.040337916059475,
+   "T_vuoto_limpido_K": 11407.912400415607,
+   "T_vuoto_ossidato_K": 7628.934977722143
+  },
+  {
+   "P_W": 0.0008886238162743398,
+   "P_abs_W": 1.0400138094816908e-05,
+   "dT_fluido_K": 22.89197858369403,
+   "T_vuoto_limpido_K": 12281.670581110877,
+   "T_vuoto_ossidato_K": 8213.251463771656
+  },
+  {
+   "P_W": 0.0011937766417144358,
+   "P_abs_W": 1.397153857551343e-05,
+   "dT_fluido_K": 30.75306875120287,
+   "T_vuoto_limpido_K": 13222.352023058584,
+   "T_vuoto_ossidato_K": 8842.322396045773
+  },
+  {
+   "P_W": 0.0016037187437513293,
+   "P_abs_W": 1.8769355597724527e-05,
+   "dT_fluido_K": 41.31365203573402,
+   "T_vuoto_limpido_K": 14235.082517990828,
+   "T_vuoto_ossidato_K": 9519.57556548266
+  },
+  {
+   "P_W": 0.002154434690031882,
+   "P_abs_W": 2.5214739783294563e-05,
+   "dT_fluido_K": 55.500732572028284,
+   "T_vuoto_limpido_K": 15325.380457332085,
+   "T_vuoto_ossidato_K": 10248.701316730603
+  },
+  {
+   "P_W": 0.002894266124716749,
+   "P_abs_W": 3.3873464596532855e-05,
+   "dT_fluido_K": 74.55964709601284,
+   "T_vuoto_limpido_K": 16499.18690165913,
+   "T_vuoto_ossidato_K": 11033.672655522423
+  },
+  {
+   "P_W": 0.003888155180308085,
+   "P_abs_W": 4.55055897317947e-05,
+   "dT_fluido_K": 100.16338014759316,
+   "T_vuoto_limpido_K": 17762.897953383286,
+   "T_vuoto_ossidato_K": 11878.766896562789
+  },
+  {
+   "P_W": 0.005223345074266838,
+   "P_abs_W": 6.113217887521237e-05,
+   "dT_fluido_K": 134.55941804112658,
+   "T_vuoto_limpido_K": 19123.399609037828,
+   "T_vuoto_ossidato_K": 12788.588969832002
+  },
+  {
+   "P_W": 0.007017038286703823,
+   "P_abs_W": 8.212492830127686e-05,
+   "dT_fluido_K": 180.76703239134582,
+   "T_vuoto_limpido_K": 20588.10528106828,
+   "T_vuoto_ossidato_K": 13768.09651225791
+  },
+  {
+   "P_W": 0.009426684551178845,
+   "P_abs_W": 0.00011032657386966788,
+   "dT_fluido_K": 242.84231067041776,
+   "T_vuoto_limpido_K": 22164.996193572206,
+   "T_vuoto_ossidato_K": 14822.62688144506
+  },
+  {
+   "P_W": 0.012663801734674022,
+   "P_abs_W": 0.00014821264570443507,
+   "dT_fluido_K": 326.234198081414,
+   "T_vuoto_limpido_K": 23862.66487209738,
+   "T_vuoto_ossidato_K": 15957.926238630725
+  },
+  {
+   "P_W": 0.01701254279852586,
+   "P_abs_W": 0.00019910876932205512,
+   "dT_fluido_K": 438.2628039735085,
+   "T_vuoto_limpido_K": 25690.36196446875,
+   "T_vuoto_ossidato_K": 17180.180859318494
+  },
+  {
+   "P_W": 0.022854638641349883,
+   "P_abs_W": 0.00026748258782183747,
+   "dT_fluido_K": 588.7619583609345,
+   "T_vuoto_limpido_K": 27658.046647766772,
+   "T_vuoto_ossidato_K": 18496.05084218346
+  },
+  {
+   "P_W": 0.0307029062975785,
+   "P_abs_W": 0.00035933592996168347,
+   "dT_fluido_K": 790.9424219217015,
+   "T_vuoto_limpido_K": 29776.440896121705,
+   "T_vuoto_ossidato_K": 19912.706399914827
+  },
+  {
+   "P_W": 0.04124626382901348,
+   "P_abs_W": 0.00048273164848933024,
+   "dT_fluido_K": 1062.5515217337704,
+   "T_vuoto_limpido_K": 32057.087905027365,
+   "T_vuoto_ossidato_K": 21437.866929734093
+  },
+  {
+   "P_W": 0.05541020330009481,
+   "P_abs_W": 0.0006485013744049324,
+   "dT_fluido_K": 1427.4310051490913,
+   "T_vuoto_limpido_K": 34512.41499052739,
+   "T_vuoto_ossidato_K": 23079.84307647558
+  },
+  {
+   "P_W": 0.0744380301325168,
+   "P_abs_W": 0.0008711963135650564,
+   "dT_fluido_K": 1917.6098596482682,
+   "T_vuoto_limpido_K": 37155.801306011126,
+   "T_vuoto_ossidato_K": 24847.582017424633
+  },
+  {
+   "P_W": 0.1,
+   "P_abs_W": 0.0011703645462059202,
+   "dT_fluido_K": 2576.115805636557,
+   "T_vuoto_limpido_K": 40001.650745608466,
+   "T_vuoto_ossidato_K": 26750.716215665907
+  }
+ ]
+}

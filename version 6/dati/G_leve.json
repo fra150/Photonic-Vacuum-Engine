@@ -1,0 +1,75 @@
+{
+ "titolo": "G. Leve di progetto",
+ "base": {
+  "P_abs": 1.1703645462059202e-08,
+  "tau": 3.3054623763093198e-24,
+  "Pe_r": 0.0007723021462415372,
+  "omega": 0.005098202439128297,
+  "eta": 0.011703645462059202
+ },
+ "leve": [
+  {
+   "nome": "Potenza x10 (1 $\\to$ 10 $\\mu$W)",
+   "Pe_r": 0.007723021462415372,
+   "omega": 0.050982024391282965,
+   "nota": "",
+   "fattore_Pe": 10.0,
+   "fattore_omega": 10.0,
+   "tipo": "P"
+  },
+  {
+   "nome": "Messa a fuoco NA 0,9 ($w_0$ 500 $\\to$ 361 nm)",
+   "Pe_r": 0.0014850098512780143,
+   "omega": 0.009803003763176558,
+   "nota": "",
+   "fattore_Pe": 1.9228353287698594,
+   "fattore_omega": 1.9228353287698594,
+   "tipo": "w0"
+  },
+  {
+   "nome": "Polarizzazione lineare (s = 0)",
+   "Pe_r": 0.0,
+   "omega": 0.0,
+   "nota": "",
+   "fattore_Pe": 0.0,
+   "fattore_omega": 0.0,
+   "tipo": "s"
+  },
+  {
+   "nome": "OAM $\\ell = 5$ con $s = 1$ (con sovrapposizione)",
+   "Pe_r": 0.0008130829576024111,
+   "omega": 0.0053674090352272994,
+   "nota": "",
+   "fattore_Pe": 1.0528042186071043,
+   "fattore_omega": 1.0528042186071043,
+   "tipo": "l"
+  },
+  {
+   "nome": "Compattazione a pari massa ($R/10$)",
+   "Pe_r": 0.0007723021462415372,
+   "omega": 1.4793237894854516,
+   "nota": "coppia invariante; omega per il rapporto degli attriti (1e2-1e3)",
+   "fattore_Pe": 1.0,
+   "fattore_omega": 290.1657608045847,
+   "tipo": "R"
+  },
+  {
+   "nome": "Vuoto spinto ($p = 10^{-6}$ mbar)",
+   "Pe_r": 0.0007723021462415372,
+   "omega": 67948758.63156936,
+   "nota": "nessuno stato stazionario reale: il limite diventa la rottura",
+   "fattore_Pe": 1.0,
+   "fattore_omega": 13327983626.163618,
+   "tipo": "beta"
+  },
+  {
+   "nome": "Materiale: grafene invece di rame",
+   "Pe_r": 0.0006320505025622936,
+   "omega": 0.004172358486244024,
+   "nota": "cambia l’assorbimento specifico; effetto su $Pe_r$ $= 0.82$",
+   "fattore_Pe": 0.8183979620388366,
+   "fattore_omega": 0.8183979620388365,
+   "tipo": "mat"
+  }
+ ]
+}
