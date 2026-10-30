@@ -1,0 +1,49 @@
+{
+ "rotore": {
+  "titolo": "V7 - rotore a ritardo di fase",
+  "righe": [
+   "vaterite, R = 2 um, acqua 310 K",
+   "P = 30 mW, polarizzazione circolare",
+   "ritardo delta = 8.03 rad",
+   "tau = 8.47e-18 N m",
+   "f = 9.7 Hz",
+   "Pe_r = 1980",
+   "dT = 17.9 K"
+  ]
+ },
+ "1_nm": {
+  "titolo": "V7 - il motore da 1 nm",
+  "righe": [
+   "R = 0.5 nm, diametro 1 nm",
+   "lambda = 532 nm: R/lambda = 9.4e-04",
+   "eta_int = 2.0e-06",
+   "Pe_r a 10 mW = 1.3e-05",
+   "per Pe_r = 10 servono 7.9 kW",
+   "nessun rotore: e' rumore browniano"
+  ]
+ },
+ "1_m": {
+  "titolo": "V7 - il motore da 1 m",
+  "righe": [
+   "disco/sfera R = 0.5 m, diametro 1 m",
+   "P = 10 mW, acqua 310 K",
+   "tau = 2.82e-18 N m",
+   "Pe_r = 660 (deterministico)",
+   "omega = 1.3e-15 rad/s",
+   "eta_mecc = 3.7e-31",
+   "oggetto orientato, non rotore"
+  ]
+ },
+ "manubrio": {
+  "titolo": "V7.1 - manubrio di silice, 200 nm",
+  "righe": [
+   "silice, R = 100 nm, vuoto 1e-8 mbar",
+   "omega_rottura = 1.52 GHz",
+   "I = 1.7e-33 kg m^2",
+   "tau a 10 mW = 1.1e-22 N m",
+   "t_spin a meta' limite = 7.60e-02 s",
+   "limite assoluto 2P/omega: 1.4e-06 s",
+   "il limite e' il materiale, non la coppia"
+  ]
+ }
+}

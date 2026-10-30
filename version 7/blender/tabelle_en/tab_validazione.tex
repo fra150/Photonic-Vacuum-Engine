@@ -1,0 +1,17 @@
+\begin{tabular}{|p{0.3cm}|p{2.3cm}|p{2.8cm}|p{3.6cm}|p{4.25cm}|p{0.65cm}|}
+\hline
+ & Test & Reference & Check & Model / expected & Result \\
+\hline
+1 & phase-retardation algebra & Jones + Stokes; checked by hand & 4 limiting cases (circular/linear, $\lambda/4$, $\lambda/2$) & 1; 2; 1; 0 / 1; 2; 1; 0 (exact) & PASS \\
+\hline
+2 & Beth limit: $\lambda/2$ circular & Beth 1936, Phys. Rev. 50, 115 & $\tau/(P/\omega)$ for a $\lambda/2$ plate, circular & 2 / 2 (exact) & PASS \\
+\hline
+3 & water thermal (V6.1) & V6.1: $\Delta T=P_{\rm abs}/(4\pi\kappa R)$; 150 $\mu$W & $\Delta T$ at 150 $\mu$W, $R=1$ and 3 $\mu$m & 19.0; 6.34 K / 20; 6.6 K (0.95; 0.96) & PASS \\
+\hline
+4 & He 1995: absorptive CuO with OAM & He et al., PRL 75, 826 (1995) & CuO 2 $\mu$m, 10 mW, $\ell=1$, kerosene & 10.75 Hz / 4 Hz (2.69) & PASS \\
+\hline
+5 & Friese 1998: birefringent calcite & Friese et al., Nature 394, 348 (1998) & calcite 1 $\mu$m, 300 mW, 1064 nm & 243.8 Hz / 357 Hz (0.68) & PASS \\
+\hline
+6 & GHz limit of silica dumbbell & Reimann et al., PRL 121, 033602 (2018); Ahn et al. (2020) & silica dumbbell 100 nm, 10 mW, $\sigma_y=1$--3 GPa & 1.52--2.63 GHz; $t_{\rm spin}=0.076$--$0.132$ s / 0.5--10 GHz; $t_{\rm spin}<1$ s & PASS \\
+\hline
+\end{tabular}

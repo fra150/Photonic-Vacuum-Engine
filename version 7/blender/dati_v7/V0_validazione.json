@@ -1,0 +1,227 @@
+{
+ "versione": "V8.0",
+ "tolleranza_valore": 3.0,
+ "nota_generale": "V8.0 - test di coerenza, non validazione. D fallisce ai parametri della fonte (rapporto ~9.8): non e' una validazione del modello di ritardo.",
+ "parametri_letteratura": {
+  "he1995": {
+   "R_m": 1e-06,
+   "P_W": 0.01,
+   "l": 3,
+   "s": 0.0,
+   "mu_Pas": 0.00158,
+   "f_mis_Hz": 4.0,
+   "materiale": "cu_nero",
+   "lambda_m": 6.328e-07,
+   "w0_m": 1.2e-06
+  },
+  "friese1998": {
+   "R_lat_m": 1.5e-06,
+   "t_m": 1e-06,
+   "P_W": 0.3,
+   "lambda_m": 1.064e-06,
+   "dn": 0.172,
+   "mu_Pas": 0.0007,
+   "f_mis_Hz": 357.0
+  },
+  "limite_ghz": {
+   "R_m": 1e-07,
+   "P_W": 0.01,
+   "sy_GPa": [
+    1.0,
+    3.0
+   ],
+   "f_lim_GHz": [
+    0.5,
+    10.0
+   ],
+   "t_spin_max_s": 1.0
+  }
+ },
+ "test": [
+  {
+   "test": "A - algebra del ritardo di fase",
+   "esito": "PASS",
+   "dettagli": [
+    {
+     "polarizzazione": "circolare",
+     "lamina": "lambda/4",
+     "delta": 1.5707963267948966,
+     "tau_su_P_omega": 0.9999999999999999,
+     "atteso": 0.9999999999999999,
+     "ok": true
+    },
+    {
+     "polarizzazione": "circolare",
+     "lamina": "lambda/2",
+     "delta": 3.141592653589793,
+     "tau_su_P_omega": 2.0,
+     "atteso": 2.0,
+     "ok": true
+    },
+    {
+     "polarizzazione": "lineare",
+     "lamina": "lambda/4",
+     "delta": 1.5707963267948966,
+     "tau_su_P_omega": 1.0,
+     "atteso": 1.0,
+     "ok": true
+    },
+    {
+     "polarizzazione": "lineare",
+     "lamina": "lambda/2",
+     "delta": 3.141592653589793,
+     "tau_su_P_omega": 1.2246467991473532e-16,
+     "atteso": 1.2246467991473532e-16,
+     "ok": true
+    }
+   ],
+   "riferimento": "Jones + Stokes; struttura verificata a mano",
+   "nota": "circolare: 1-cos d (2 hbar per fotone a lambda/2).  lineare: sin d (0 a lambda/2 a 45 gradi: nessun momento angolare trasferito, e infatti sin(pi) = 0; 1 a lambda/4: la lineare diventa circolare). La formula sin^2(d/2) della letteratura per il caso lineare NON riproduce il caso lambda/2 e non e' usata."
+  },
+  {
+   "test": "B - limite di Beth: lambda/2 circolare",
+   "esito": "PASS",
+   "dettagli": {
+    "tau_su_P_omega": 2.0,
+    "atteso": 2.0,
+    "hbar_per_fotone": 2.0
+   },
+   "riferimento": "Beth 1936, Phys. Rev. 50, 115",
+   "nota": "l'elica si inverte: 2 hbar per fotone.  E' il test che la V6 non aveva: con sin^2(d/2) si otterrebbe 1 hbar e tutte le coppie sarebbero dimezzate."
+  },
+  {
+   "test": "C - termica in acqua (V6.1)",
+   "esito": "PASS",
+   "dettagli": [
+    {
+     "R_um": 1.0,
+     "P_ass_W": 0.00015,
+     "dT": 19.007357853331435,
+     "atteso_K": 20.0,
+     "rapporto": 0.9503678926665717
+    },
+    {
+     "R_um": 3.0,
+     "P_ass_W": 0.00015,
+     "dT": 6.335785951110478,
+     "atteso_K": 6.6,
+     "rapporto": 0.9599675683500725
+    }
+   ],
+   "riferimento": "V6.1: dT = P_abs/(4 pi kappa R); il piano V7 dava 20 K e 6.6 K per P_abs = 150 uW",
+   "nota": "verifica di chiusura della V6.1: il modello riproduce il conto a mano entro il 15%.  La conduttivita' usata e' 0.628 W/m/K (acqua a 310 K), non 0.6: lo scarto e' il 4% ed e' tutto li'."
+  },
+  {
+   "test": "D - He 1995: CuO assorbente con OAM",
+   "esito": "FAIL",
+   "dettagli": {
+    "R_um": 1.0,
+    "P_mW": 10.0,
+    "lambda_nm": 632.8,
+    "l": 3,
+    "s": 0.0,
+    "w0_um": 1.2,
+    "Q_abs_632nm": 0.7012247366504922,
+    "Q_sca_632nm": 1.9928855913501409,
+    "I0_W_m2": 4420970641.441538,
+    "P_abs_mW": 9.73923245347906,
+    "P_abs_su_P": 0.973923245347906,
+    "tau_Nm": 9.815487752917897e-18,
+    "beta_kerosene": 3.970973114137498e-20,
+    "f_modello_Hz": 39.34006476077973,
+    "f_misurata_Hz": 4.0,
+    "rapporto_modello_misura": 9.835016190194933,
+    "f_tutta_P_assorbita_Hz": 40.393393369234786,
+    "rapporto_tutta_P": 10.098348342308697,
+    "sensibilita_w0": [
+     {
+      "w0_um": 1.2,
+      "f_Hz": 39.34006476077973,
+      "rapporto": 9.835016190194933
+     },
+     {
+      "w0_um": 0.5,
+      "f_Hz": 226.59877302209122,
+      "rapporto": 56.649693255522806
+     }
+    ]
+   },
+   "riferimento": "He, Friese, Heckenberg, Rubinsztein-Dunlop, PRL 75, 826 (1995)",
+   "nota": "controllo di punto, non di banda: 632.8 nm, l = 3, 10 mW, CuO assorbente di ~1 um di raggio in kerosene, 4 Hz misurati.  La Mie locale a 632.8 nm da' Q_abs = 0.70.  Il modello da' ~9.8x la misura con w0 = 1.2 um: D FALLISCE al fattore 3.  Il waist non e' pubblicato; con w0 = 0.5 um il rapporto sale a ~56, quindi il FAIL e' robusto e non e' un artefatto della scelta.  Non e' una validazione del modello di ritardo: qui il canale e' l'assorbimento, e il fallimento e' riportato come tale."
+  },
+  {
+   "test": "E - Friese 1998: calcite birifrangente",
+   "esito": "PASS",
+   "dettagli": {
+    "t_um": 1.0,
+    "P_mW": 300.0,
+    "lambda_nm": 1064.0,
+    "dn": 0.172,
+    "delta_rad": 1.0157028880027148,
+    "c1": 0.5367406265857332,
+    "tau_Nm": 9.095504231227828e-17,
+    "beta_acqua": 5.93761011528471e-20,
+    "f_modello_Hz": 243.8008609872738,
+    "f_misurata_Hz": 357.0,
+    "rapporto_modello_misura": 0.6829155769951647,
+    "sensibilita_raggio_laterale": [
+     {
+      "R_lat_um": 1.0,
+      "f_Hz": 822.8279058320492,
+      "rapporto": 2.3048400723586813
+     },
+     {
+      "R_lat_um": 1.5,
+      "f_Hz": 243.8008609872738,
+      "rapporto": 0.6829155769951647
+     },
+     {
+      "R_lat_um": 2.0,
+      "f_Hz": 102.85348822900615,
+      "rapporto": 0.28810500904483516
+     }
+    ]
+   },
+   "riferimento": "Friese, Nieminen, Heckenberg, Rubinsztein-Dunlop, Nature 394, 348 (1998)",
+   "nota": "controllo di punto: calcite da 1 um, 300 mW a 1064 nm, 357 Hz.  delta = 2 pi dn t/lambda = 1.016, c1 = 0.537 con la media larga; il raggio laterale non e' pubblicato e si assume 1.5 um.  Il rapporto 0.68 e' dentro il fattore 3; la sensibilita' mostra che con R = 1 um il modello darebbe 2.3x, ancora dentro, e con R = 2 um 0.29x, fuori.  Il test misura quindi anche quanto pesa l'assunzione."
+  },
+  {
+   "test": "F - limite GHz del manubrio di silice",
+   "esito": "PASS",
+   "dettagli": {
+    "casi": [
+     {
+      "sy_GPa": 1.0,
+      "I_kgm2": 1.6918785436520027e-33,
+      "tau_Nm": 1.060596198575218e-22,
+      "omega_lim_rad_s": 9534625892.455923,
+      "f_lim_GHz": 1.5174828413163342,
+      "t_spin_s": 0.07604887227988189,
+      "t_spin_limite_s": 1.4279131325543046e-06
+     },
+     {
+      "sy_GPa": 3.0,
+      "I_kgm2": 1.6918785436520027e-33,
+      "tau_Nm": 1.060596198575218e-22,
+      "omega_lim_rad_s": 16514456476.89541,
+      "f_lim_GHz": 2.6283573807738714,
+      "t_spin_s": 0.13172051064707185,
+      "t_spin_limite_s": 2.473218094378889e-06
+     }
+    ],
+    "banda_ammessa_GHz": [
+     0.5,
+     10.0
+    ],
+    "decennio_ok": true,
+    "t_spin_max_s": 1.0,
+    "coppia_ok": true,
+    "nota_coppia": "t_spin e' il tempo per arrivare a meta' del limite con la coppia di scattering a 10 mW; t_spin_limite e' lo stesso tempo con la coppia massima 2P/omega, riportato per mostrare il margine."
+   },
+   "riferimento": "Reimann et al., PRL 121, 033602 (2018); Ahn et al. (2020)",
+   "nota": "il modello non deve indovinare il record (5-6 GHz, particelle piu' piccole e piu' resistenti): deve dare il decennio giusto per un manubrio da 100 nm con snervamento 1-3 GPa, e la coppia a 10 mW deve bastare a portarlo al limite in meno di 1 s.  Il tempo e' quello della coppia di scattering, non quello della coppia massima 2P/omega: sono separati di ~5 ordini di grandezza e confonderli era l'errore della V7."
+  }
+ ],
+ "superati": 5,
+ "totali": 6
+}

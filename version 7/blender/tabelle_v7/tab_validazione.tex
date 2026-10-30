@@ -1,0 +1,19 @@
+\begin{tabular}{|p{0.3cm}|p{2.4cm}|p{2.7cm}|p{3.5cm}|p{3.75cm}|p{0.85cm}|}
+\hline
+ & Test & Riferimento & Controllo & Modello / atteso & Esito \\
+\hline
+1 & Algebra del ritardo di fase & Jones + Stokes; struttura verificata a mano & 4 casi limite (circolare/lineare, $\lambda/4$, $\lambda/2$) & 1; 2; 1; 0 / 1; 2; 1; 0 (esatto) & PASS \\
+\hline
+2 & Limite di Beth: $\lambda/2$ circolare & Beth 1936, Phys. Rev. 50, 115 & $\tau/(P/\omega)$ per lamina $\lambda/2$ circolare & 2 / 2 (esatto) & PASS \\
+\hline
+3 & Termica in acqua (V6.1) & V6.1: $\Delta T=P_{\rm abs}/(4\pi\kappa R)$; 150 $\mu$W & $\Delta T$ a 150 $\mu$W, $R=1$ e 3 $\mu$m & 19{,}0; 6{,}3 K / 20{,}0; 6{,}6 K (0{,}95; 0{,}96) & PASS \\
+\hline
+4 & He 1995: CuO assorbente con OAM & He, Friese, Heckenberg, Rubinsztein-Dunlop, PRL 75, 826 (1995) & CuO 2 $\mu$m, 10 mW, $\ell=3$, kerosene, 632,8 nm & 39{,}34 Hz / 4 Hz (9{,}84) & FAIL \\
+\hline
+5 & Friese 1998: calcite birifrangente & Friese, Nieminen, Heckenberg, Rubinsztein-Dunlop, Nature 394, 348 (1998) & calcite 1 $\mu$m, 300 mW, 1064 nm & 243{,}8 Hz / 357 Hz (0{,}68) & PASS \\
+\hline
+6 & Limite GHz del manubrio di silice & Reimann et al., PRL 121, 033602 (2018); Ahn et al. (2020) & manubrio silice 100 nm, 10 mW, $\sigma_y=1$--3 GPa & 1{,}52--2{,}63 GHz; $t_{\rm spin}=0{,}076--0{,}132$ s / $0{,}5$--10 GHz; $t_{\rm spin}<1$ s & PASS \\
+\hline
+\end{tabular}
+
+\par\smallskip\noindent\footnotesize 5/6 test di coerenza superati. D non e' una validazione del modello di ritardo: a 632,8 nm e con CuO assorbente il canale e' l'assorbimento.

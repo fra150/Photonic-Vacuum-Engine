@@ -1,0 +1,16 @@
+\begin{tabular}{@{}p{0.35cm}p{2.1cm}p{3.5cm}p{3.8cm}p{3.55cm}@{}}
+\hline
+\# & Correzione & V7.1 & V7 & Effetto sulla mappa \\
+\hline
+1 & Vaterite: birifrangenza & $\Delta n=0{,}17$ (valore della calcite) & $\Delta n=0{,}06$ efficace (range $0{,}06$--$0{,}10$); la calcite resta $0{,}17$ & la coppia di ritardo non e' piu' quella della calcite; la finestra della vaterite si restringe e si sposta \\
+2 & Vaterite: temperatura limite & $T_m=1000$ K & $T_m=723$ K (inizio transizione vaterite$\to$calcite); criterio $T\le0{,}7\,T_m=506$ K & il tetto termico in vuoto scende; nessuna cella valida supera il nuovo limite \\
+3 & Validita' del fascio & nessun limite esplicito; griglia fino a $30\,\mu$m & $R\le2\,\mu$m ($z_R\simeq2\,\mu$m); $R>2\,\mu$m marcato come estrapolazione & 24\,300 celle su 48\,600 fuori dominio; le 8 finestre stanno tutte entro $1{,}46\,\mu$m \\
+4 & Attrito molecolare & formula cinetica, stesso coefficiente per tutte le forme & sfera: $\beta=(16/3)\,pR^4/\bar v$; forme non sferiche: $\beta$ incerto e marcato & in vuoto le affermazioni quantitative valgono solo per sfere; gli 8 rotori formali sono sfere di vaterite \\
+5 & Emissivita' termica & $\varepsilon_{\rm eff}$ da Mie a $T_0$; Cu nero $0{,}30$ & $\varepsilon_{\rm eff}(materiale,R,T)$ con peso di Planck a $T$; Cu nero $0{,}30$ dichiarato; bordo termico ricalcolato & il rame lucido resta uno specchio nell'IR; il nero dipende dal parametro dichiarato \\
+6 & Definizione di $Pe_r$ & $Pe_r=\tau/(k_BT_0)$, $T_0$ implicita & $Pe_r=\tau/(k_BT_{\rm bath})$, $T_{\rm bath}=310$ K & nessun cambio numerico; la definizione diventa esplicita \\
+7 & Rendimento fisico & $\eta_{\rm mecc}=\omega/\omega_{\rm ott}$ usata come efficienza & $\eta_{\rm lim}=\tau\omega_{\rm rottura}/P$; $\eta_{\rm mecc}$ resta solo una comodita' numerica & 0 rotori fisici: nessuna cella valida raggiunge $\eta_{\rm lim}\ge10^{-7}$; $\eta_{\rm mecc}$ non e' un rendimento \\
+8 & Unita' & $f=\omega/2\pi$ ma testo con $\tau/\beta$ o $\beta/I$ & $f=\omega/(2\pi)=\tau/(2\pi\beta)$; tempo di smorzamento $I/\beta$; non $\tau/\beta$ o $\beta/I$ & unita' coerenti in tabelle e figure: $f$ in Hz, $t$ in s \\
+9 & Validazione D & D con $\ell=1$ a 532 nm: 10,75 Hz vs 4 Hz (2,69), PASS & D corretto a 632,8 nm e $\ell=3$: 39{,}34 Hz vs 4 Hz (9{,}84), FAIL; test di coerenza 5/6 & D non e' una validazione del modello di ritardo: a 632,8 nm il canale e' l'assorbimento \\
+10 & Tabelle e conteggi & $P_{\min}/P_{\max}$ per segmento; frontiera e griglia non separate & $P_{\min}=\min P_{\rm lo}$, $P_{\max}=\max P_{\rm hi}$, $R(P_{\min})$; celle contate da \texttt{valido} & 8 finestre di frontiera, 6 con almeno una cella di griglia, 40 celle valide; le 2 finestre di Cu non hanno celle \\
+\hline
+\end{tabular}
