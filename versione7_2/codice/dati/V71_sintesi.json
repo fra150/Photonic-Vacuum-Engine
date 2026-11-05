@@ -1,0 +1,147 @@
+{
+ "descrizione": "V7.1: ciclo di 720 gradi con contrappeso di mezzo volume dentro sangue intero a 310 K, tarato su Pe_r = 10",
+ "interpretazione": "contrappeso = corpo di volume V/2 a distanza 2 R; latch una volta per giro; 720 gradi = raddoppio del rivestimento del collegamento (SO(3) -> SU(2))",
+ "sangue": {
+  "mu": 0.004,
+  "rho": 1060.0,
+  "kappa": 0.55,
+  "T": 310.0,
+  "nota_mu": "sangue intero non newtoniano: 3.5 mPa s ad alto shear, ~10 mPa s a 10 1/s.  A omega ~ 1-1000 1/s il valore 4 mPa s e' quello giusto entro +-30%."
+ },
+ "ottica": {
+  "532": {
+   "mu_a": 7500.0,
+   "mu_s": 80000.0,
+   "nota": "HbO2: eps ~ 13900 M^-1 cm^-1, c = 2.33 mM"
+  },
+  "650": {
+   "mu_a": 2500.0,
+   "mu_s": 60000.0,
+   "nota": "finestra rossa"
+  },
+  "800": {
+   "mu_a": 430.0,
+   "mu_s": 45000.0,
+   "nota": "finestra tissutale"
+  },
+  "1064": {
+   "mu_a": 200.0,
+   "mu_s": 35000.0,
+   "nota": "Hb quasi trasparente"
+  }
+ },
+ "riassunto": {
+  "celle": 640,
+  "valide": 95,
+  "profondita": {
+   "532": {
+    "profondita_balistica_um": 11.428571428571429,
+    "mu_a_cm": 75.0,
+    "mu_s_cm": 800.0
+   },
+   "800": {
+    "profondita_balistica_um": 22.01188641866608,
+    "mu_a_cm": 4.3,
+    "mu_s_cm": 450.0
+   }
+  },
+  "migliore_532_nm": {
+   "R_um": 0.3254431177121036,
+   "materiale": "vaterite",
+   "z_um": 2.0,
+   "P_target_uW": 358.4167471113004,
+   "P_inc_mW": 0.426962593966845,
+   "T_720_s": 3.9486171117054125,
+   "E_720_mJ": 1.685911804595614,
+   "dT_K": 13.748776417222562,
+   "dT_percorso_K": 13.748776417222562,
+   "tau": 4.2800119000000005e-20,
+   "modulazione": 0.8416463775916415,
+   "costo_inerzia": 6.3149802624737195
+  },
+  "migliore_800_nm": {
+   "R_um": 0.3254431177121036,
+   "materiale": "vaterite",
+   "z_um": 2.0,
+   "P_target_uW": 496.30335660211125,
+   "P_inc_mW": 0.5435095870232061,
+   "T_720_s": 3.9486171117054125,
+   "E_720_mJ": 2.1461112556957738,
+   "dT_K": 9.468522709002372,
+   "dT_percorso_K": 9.468522709002372,
+   "tau": 4.2800119000000005e-20,
+   "modulazione": 0.8416463775916415,
+   "costo_inerzia": 6.3149802624737195
+  }
+ },
+ "confronto_contrappeso": [
+  {
+   "R_um": 1.0,
+   "T_720_senza_s": 29.516491842918416,
+   "T_720_con_s": 114.55650306716694,
+   "omega_senza": 0.42574065648570936,
+   "omega_con": 0.10969582937593023,
+   "costo_inerzia": 6.314980262473719,
+   "costo_attrito": 3.8811015779523026,
+   "rallentamento": 3.8811015779523026,
+   "modulazione": 0.8416463775916415
+  },
+  {
+   "R_um": 2.0,
+   "T_720_senza_s": 236.13193474334733,
+   "T_720_con_s": 916.4520245373354,
+   "omega_senza": 0.05321758206071367,
+   "omega_con": 0.01371197867199128,
+   "costo_inerzia": 6.314980262473719,
+   "costo_attrito": 3.881101577952302,
+   "rallentamento": 3.881101577952302,
+   "modulazione": 0.8416463775916415
+  },
+  {
+   "R_um": 5.0,
+   "T_720_senza_s": 3689.5614803648036,
+   "T_720_con_s": 14319.562883395869,
+   "omega_senza": 0.0034059252518856735,
+   "omega_con": 0.0008775666350074417,
+   "costo_inerzia": 6.314980262473719,
+   "costo_attrito": 3.8811015779523013,
+   "rallentamento": 3.8811015779523017,
+   "modulazione": 0.8416463775916415
+  },
+  {
+   "R_um": 10.0,
+   "T_720_senza_s": 29516.49184291843,
+   "T_720_con_s": 114556.50306716695,
+   "omega_senza": 0.0004257406564857092,
+   "omega_con": 0.00010969582937593021,
+   "costo_inerzia": 6.314980262473719,
+   "costo_attrito": 3.8811015779523013,
+   "rallentamento": 3.8811015779523017,
+   "modulazione": 0.8416463775916415
+  }
+ ],
+ "cosa_non_dice": [
+  "non produce spinta: F <= 2P/c",
+  "il ciclo di 720 non aumenta la coppia",
+  "il riscaldamento del sangue e' stimato a sorgente lineare; la perfusione lo riduce, la coagulazione lo peggiora: qui non e' modellata nessuna delle due"
+ ],
+ "cella_riferimento_3d": {
+  "R_um": 0.3,
+  "z_um": 2.0,
+  "lam_nm": 800,
+  "P_target_uW": 643.966018352155,
+  "P_inc_mW": 0.7052172830097462,
+  "tau": 4.2800119000000005e-20,
+  "omega": 4.062808495404824,
+  "T_360_s": 1.5465127914067534,
+  "T_720_s": 3.0930255828135067,
+  "E_720_mJ": 2.181255097791378,
+  "dT_K": 12.285645034396849,
+  "modulazione": 0.8416463775916415,
+  "costo_inerzia": 6.314980262473719,
+  "costo_attrito": 3.881101577952302,
+  "omega_latch": 62571964.589328274,
+  "omega_rottura": 1012427898.7179784
+ },
+ "relazione": "T_720 = 4 pi beta / (Pe_r kT): fissato Pe_r, il tempo del ciclo dipende solo dall'attrito, cioe' da R^3 e da mu.  Non dipende dalla lunghezza d'onda."
+}
