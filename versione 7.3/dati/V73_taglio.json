@@ -1,0 +1,297 @@
+{
+ "descrizione": "V7.3: cancello sul flusso, quattro uscite, due rami",
+ "input": {
+  "R_um": 0.5,
+  "lambda_nm": 800,
+  "z_um": 2.0,
+  "z_c_um": 2.5,
+  "w0_um": 0.5,
+  "P_inc_mW": 0.6627754332007018,
+  "Pe_r": 10.0,
+  "tau_ott_Nm": 4.2800119000000005e-20,
+  "mu_plasma_mPa_s": 1.3,
+  "mu_blood_mPa_s": [
+   7.0,
+   8.0,
+   9.0
+  ],
+  "sigma_y_blood_mPa": [
+   5.0,
+   10.0,
+   20.0
+  ],
+  "Q_band": [
+   0.1,
+   0.2,
+   0.3
+  ],
+  "xi_ref_Ns_m": 2.2e-08,
+  "R_eff_factor": 1.7955942297547167,
+  "T720_ref_s": 2.9264827091111068,
+  "E720_ref_mJ": 1.9396008452854772
+ },
+ "output_1_coppia": {
+  "gamma_vincolato_s-1": 2.7002050307921315,
+  "gamma_sfera_libera_s-1": 20.959540011604155,
+  "M_y_Nm": 0.0,
+  "drive_Nm": 4.2800119000000005e-20,
+  "beta_cw": 1.5850692266669903e-20,
+  "beta_no": 4.08407044966673e-21,
+  "convenzione": "vincolato: tau/beta_cw; libera: 2 tau/beta_no"
+ },
+ "output_2_forza": [
+  {
+   "Q": 0.1,
+   "F_pN": 0.29403385663455667,
+   "v_um_s": 13.365175301570758,
+   "gamma_s-1": 5.346070120628303,
+   "R_eff_um": 0.8977971148773584,
+   "xi_Ns_m": 2.2e-08
+  },
+  {
+   "Q": 0.2,
+   "F_pN": 0.5880677132691133,
+   "v_um_s": 26.730350603141517,
+   "gamma_s-1": 10.692140241256606,
+   "R_eff_um": 0.8977971148773584,
+   "xi_Ns_m": 2.2e-08
+  },
+  {
+   "Q": 0.3,
+   "F_pN": 0.8821015699036698,
+   "v_um_s": 40.09552590471227,
+   "gamma_s-1": 16.038210361884907,
+   "R_eff_um": 0.8977971148773584,
+   "xi_Ns_m": 2.2e-08
+  }
+ ],
+ "output_3_jeffery": {
+  "r_e": 1.8968502629920498,
+  "coeff_s": 15.230692540866082,
+  "T_J_a_T720_s": 15.230692540866082,
+  "gamma_a_T720_s-1": 5.204436196888472,
+  "ruolo": "verifica di coerenza; orbita non nel piano flusso-gradiente"
+ },
+ "output_4_fuga": [
+  {
+   "Q": 0.1,
+   "F_pN": 0.29403385663455667,
+   "U0_kT": 8.587413525490332,
+   "tau_esc_s": 200.66039037675617
+  },
+  {
+   "Q": 0.2,
+   "F_pN": 0.5880677132691133,
+   "U0_kT": 17.174827050980664,
+   "tau_esc_s": 538143.3340833939
+  },
+  {
+   "Q": 0.3,
+   "F_pN": 0.8821015699036698,
+   "U0_kT": 25.762240576470994,
+   "tau_esc_s": 1924301037.3540204
+  }
+ ],
+ "gamma_limite_s-1": 2.7002050307921315,
+ "gamma_limite_regola": "min(output 1, output 2); il minimo va dichiarato",
+ "coincidenza": {
+  "tre_stime_s-1": [
+   2.7002050307921315,
+   5.346070120628303,
+   5.204436196888472
+  ],
+  "intervallo": [
+   2.7002050307921315,
+   5.346070120628303
+  ],
+  "fattore": 1.9798756241336166,
+  "nota": "2.7-5.4 s^-1 e' una coincidenza, non una finestra; Jeffery 5.20 cade fra 2.70 e 5.40"
+ },
+ "confronto_fisiologico": {
+  "venula": {
+   "gamma": 267.0,
+   "rapporto": 98.88138010085588
+  },
+  "capillare": {
+   "gamma": 667.0,
+   "rapporto": 247.01827912835532
+  },
+  "arteriola": {
+   "gamma": 2000.0,
+   "rapporto": 740.6844951374972
+  }
+ },
+ "fisiologia": {
+  "venula 30 um": {
+   "gamma_range_s-1": [
+    100.0,
+    300.0
+   ],
+   "gamma_punto_s-1": 267.0
+  },
+  "capillare 6 um": {
+   "gamma_range_s-1": [
+    100.0,
+    500.0
+   ],
+   "gamma_punto_s-1": 667.0
+  },
+  "arteriola": {
+   "gamma_range_s-1": [
+    1500.0,
+    2000.0
+   ],
+   "gamma_punto_s-1": 2000.0
+  }
+ },
+ "sensibilita_mu": {
+  "plasma_1.3": 2.7002050307921315,
+  "plasma_1.5": 2.34017769335318,
+  "sangue_7_sy5": 0.409445646298465,
+  "sangue_8_sy10": 0.27774656351859234,
+  "sangue_9_sy20": 0.10374205291863423
+ },
+ "sedimentazione": [
+  {
+   "Q": 0.1,
+   "F_buoy_N": 8.65500922082354e-15,
+   "F_buoy_fN": 8.655009220823539,
+   "k_rad": 5.880677132691133e-07,
+   "k_ax": 7.644880272498473e-08,
+   "dz_m": 1.1321314281348371e-07,
+   "dz_nm": 113.21314281348371,
+   "dz_su_w0": 0.22642628562696743
+  },
+  {
+   "Q": 0.2,
+   "F_buoy_N": 8.65500922082354e-15,
+   "F_buoy_fN": 8.655009220823539,
+   "k_rad": 1.1761354265382266e-06,
+   "k_ax": 1.5289760544996946e-07,
+   "dz_m": 5.660657140674186e-08,
+   "dz_nm": 56.60657140674186,
+   "dz_su_w0": 0.11321314281348371
+  },
+  {
+   "Q": 0.3,
+   "F_buoy_N": 8.65500922082354e-15,
+   "F_buoy_fN": 8.655009220823539,
+   "k_rad": 1.7642031398073398e-06,
+   "k_ax": 2.2934640817495417e-07,
+   "dz_m": 3.7737714271161245e-08,
+   "dz_nm": 37.737714271161245,
+   "dz_su_w0": 0.07547542854232249
+  }
+ ],
+ "criterio_parete": [
+  {
+   "sigma_y_mPa": 5.0,
+   "R_um": 0.879876467842678
+  },
+  {
+   "sigma_y_mPa": 6.5,
+   "R_um": 0.8061959002104055
+  },
+  {
+   "sigma_y_mPa": 10.0,
+   "R_um": 0.6983584153277654
+  },
+  {
+   "sigma_y_mPa": 20.0,
+   "R_um": 0.5542874415710698
+  }
+ ],
+ "correzione_idrodinamica": {
+  "r_cw": 0.7937005259840998,
+  "d_rel": 2.0,
+  "termine": 0.15749013123685918,
+  "term_rot": 1.0,
+  "term_bead_rot": 0.5000000000000001,
+  "term_bead_trans": 2.3811015779522995,
+  "ratio_ideale": 3.8811015779522995,
+  "ratio_bead": 4.2561015779523,
+  "ratio_bead_totale": 4.33484664357073,
+  "ratio_limite_superiore": 4.492336774807589,
+  "nota": "correzione non validata; il rumore usa 3.881"
+ },
+ "ramo_A": {
+  "nome": "A - plasma/tampone in vitro (stasi)",
+  "mu_mPa_s": [
+   1.3,
+   1.5
+  ],
+  "reologia": "newtoniana",
+  "sigma_y_mPa": 0.0,
+  "cfl": "assente (stasi)",
+  "cellule": "assenti; nessun rumore di collisione",
+  "parete": "vetro/PDMS (pozzo termico)",
+  "T720_s": 2.9264827091111068,
+  "E720_mJ": 1.9396008452854772,
+  "tre_cicli_s": 8.779448127333321,
+  "gamma_lim_s-1": 2.7002050307921315,
+  "nota": "protocollo appaiato 3+3; i 3 cicli servono ai sistematici, non alla statistica (la statistica non migliora con N); termica non vincolante"
+ },
+ "ramo_B": {
+  "nome": "B - sangue intero in vivo (stasi)",
+  "mu_mPa_s": [
+   7.0,
+   8.0,
+   9.0
+  ],
+  "reologia": "Bingham",
+  "sigma_y_mPa": [
+   5.0,
+   10.0,
+   20.0
+  ],
+  "cfl": "assente (stasi)",
+  "cellule": "ematicrito pieno, rouleaux, aggregazione",
+  "parete": "endotelio (pozzo termico)",
+  "casi": [
+   {
+    "mu_mPa_s": 7.0,
+    "sigma_y_mPa": 5.0,
+    "M_y_Nm": 7.853981633974482e-21,
+    "fattore_potenza": 1.1835037335754717,
+    "T720_s": 15.757983818290576,
+    "P_target_mW": 0.7843971997151312,
+    "E720_mJ": 12.360518380223478,
+    "tre_cicli_s": 47.27395145487173,
+    "gamma_coppia_s-1": 0.409445646298465,
+    "E720_su_V72": 6.372712411560233
+   },
+   {
+    "mu_mPa_s": 8.0,
+    "sigma_y_mPa": 10.0,
+    "M_y_Nm": 1.5707963267948965e-20,
+    "fattore_potenza": 1.3670074671509433,
+    "T720_s": 18.00912436376066,
+    "P_target_mW": 0.9060189662295606,
+    "E720_mJ": 16.316608238754025,
+    "tre_cicli_s": 54.02737309128197,
+    "gamma_coppia_s-1": 0.27774656351859234,
+    "E720_su_V72": 8.412353644005805
+   },
+   {
+    "mu_mPa_s": 9.0,
+    "sigma_y_mPa": 20.0,
+    "M_y_Nm": 3.141592653589793e-20,
+    "fattore_potenza": 1.7340149343018867,
+    "T720_s": 20.260264909230738,
+    "P_target_mW": 1.1492624992584195,
+    "E720_mJ": 23.28436268522017,
+    "tre_cicli_s": 60.78079472769221,
+    "gamma_coppia_s-1": 0.10374205291863423,
+    "E720_su_V72": 12.004718775936139
+   }
+  ],
+  "nota": "potenza aumentata per compensare lo snervamento; il tempo scala solo con mu, l'energia porta il fattore (1+M_y/tau); la distinzione A/B resta 3.881 anche con lo scostamento"
+ },
+ "convenzioni": {
+  "bingham": "M_y = 4 pi R^3 sigma_y (parete conservativa); la soluzione esatta della sfera in Bingham da' (8/3) pi R^3 sigma_y, fattore 1.5 piu' basso",
+  "cfl": "limite del dominio, non ambiente; esiste solo con flusso",
+  "plasma_stasi": "plasma + stasi si realizza solo in vitro",
+  "parete_termica": "il segno della sorgente immagine va dichiarato: vetro/endotelio = pozzo; parete adiabatica = specchio"
+ },
+ "verdetto": "flusso chiuso: gamma_limite 2.70 s^-1 sotto ogni shear fisiologico (venula x99, capillare x247); il dispositivo vive in stasi ex vivo o in stasi in vivo"
+}

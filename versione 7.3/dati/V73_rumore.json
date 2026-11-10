@@ -1,0 +1,185 @@
+{
+ "descrizione": "V7.3: rumore del latch con prima passa esatta; test appaiato; ritrattazione del 30.2%",
+ "input": {
+  "Pe_r": 10.0,
+  "CV_ideale": 0.1784124116152771,
+  "ratio": 3.8811015779522995,
+  "R_cw": 0.7937005259840998,
+  "d_rel": 2.0,
+  "correzione_due_sfere": 0.15749013123685918,
+  "ratio_bead": 4.2561015779523,
+  "ratio_bead_tot": 4.33484664357073,
+  "ratio_limite_superiore": 4.492336774807589,
+  "N_cicli": 3,
+  "criterio_eps": 0.0001
+ },
+ "modello": {
+  "distribuzione": "inverse Gaussian (prima passa di un giro)",
+  "somma": "IG con media N m e shape N m/cv^2",
+  "test": "appaiato: N giri veloci vs N giri lenti",
+  "invarianza_N": "l'errore e' indipendente da N; la shape e la soglia scalano insieme"
+ },
+ "casi": [
+  {
+   "cv": 0.15,
+   "sigma_theta_360_deg": 54.0,
+   "eps_appaiato": 3.8420343766818446e-06,
+   "eps_appaiato_geo": 4.075540755997843e-06,
+   "soglia": 5.848819752951075,
+   "eps_fast": 1.3467278265899552e-06,
+   "eps_slow": 2.7288129294078877e-06,
+   "eps_totale": 0.0026380378846689694
+  },
+  {
+   "cv": 0.1784124116152771,
+   "sigma_theta_360_deg": 64.22846818149975,
+   "eps_appaiato": 0.00010093642171805574,
+   "eps_appaiato_geo": 0.0001071763598904871,
+   "soglia": 5.823573012263736,
+   "eps_fast": 3.516821200422182e-05,
+   "eps_slow": 7.200814788626528e-05,
+   "eps_totale": 0.011372352512035116
+  },
+  {
+   "cv": 0.2,
+   "sigma_theta_360_deg": 72.0,
+   "eps_appaiato": 0.0005166379112182548,
+   "eps_appaiato_geo": 0.0005490301524775359,
+   "soglia": 5.801560961729268,
+   "eps_fast": 0.0001791044200540881,
+   "eps_slow": 0.00036992573242344774,
+   "eps_totale": 0.02381514140877644
+  },
+  {
+   "cv": 0.25,
+   "sigma_theta_360_deg": 90.0,
+   "eps_appaiato": 0.005353267632400751,
+   "eps_appaiato_geo": 0.005701090294173627,
+   "soglia": 5.741370607927034,
+   "eps_fast": 0.0018321237971593574,
+   "eps_slow": 0.00386896649701427,
+   "eps_totale": 0.06982484428896937
+  },
+  {
+   "cv": 0.302,
+   "sigma_theta_360_deg": 108.72,
+   "eps_appaiato": 0.020708246218485975,
+   "eps_appaiato_geo": 0.022109024627836604,
+   "soglia": 5.665516119248799,
+   "eps_fast": 0.006983369112675275,
+   "eps_slow": 0.015125655515161329,
+   "eps_totale": 0.13203498235808556
+  }
+ ],
+ "limite_cv": {
+  "appaiato": 0.17830789239388847,
+  "totale": 0.1158067007739147
+ },
+ "ritrattazione_30_2": {
+  "cv": 0.302,
+  "eps_appaiato": 0.020708246218485975,
+  "eps_totale": 0.13203498235808556,
+  "nota": "30.2% era l'approssimazione log-normale a CV uguali; la IG esatta da' 2.07e-2, non 10^-4"
+ },
+ "tempi": [
+  {
+   "R_um": 0.3,
+   "T360_no_s": 0.1295036079608045,
+   "T360_cw_s": 0.5026166572071945,
+   "T720_s": 0.632120265167999,
+   "T_meas3_s": 1.896360795503997,
+   "omega_no": 48.51745373056518,
+   "omega_cw": 12.500949216630238,
+   "ratio": 3.8811015779522995
+  },
+  {
+   "R_um": 0.4,
+   "T360_no_s": 0.3069715151663515,
+   "T360_cw_s": 1.191387631898535,
+   "T720_s": 1.4983591470648865,
+   "T_meas3_s": 4.49507744119466,
+   "omega_no": 20.468300792582184,
+   "omega_cw": 5.2738379507658815,
+   "ratio": 3.8811015779522995
+  },
+  {
+   "R_um": 0.5,
+   "T360_no_s": 0.5995537405592802,
+   "T360_cw_s": 2.3269289685518264,
+   "T720_s": 2.9264827091111068,
+   "T_meas3_s": 8.779448127333321,
+   "omega_no": 10.479770005802077,
+   "omega_cw": 2.7002050307921315,
+   "ratio": 3.881101577952299
+  },
+  {
+   "R_um": 0.6,
+   "T360_no_s": 1.036028863686436,
+   "T360_cw_s": 4.020933257657556,
+   "T720_s": 5.056962121343992,
+   "T_meas3_s": 15.170886364031976,
+   "omega_no": 6.0646817163206475,
+   "omega_cw": 1.5626186520787797,
+   "ratio": 3.8811015779522995
+  },
+  {
+   "R_um": 0.8,
+   "T360_no_s": 2.455772121330812,
+   "T360_cw_s": 9.53110105518828,
+   "T720_s": 11.986873176519092,
+   "T_meas3_s": 35.96061952955728,
+   "omega_no": 2.558537599072773,
+   "omega_cw": 0.6592297438457352,
+   "ratio": 3.8811015779522995
+  }
+ ],
+ "specifica_latch": {
+  "ratio": {
+   "valore": 3.8811015779522995,
+   "target": 3.9,
+   "corretto_bead": 4.2561015779523,
+   "corretto_bead_tot": 4.33484664357073,
+   "limite_superiore": 4.492336774807589,
+   "stato": "geometria ideale verificata; correzione idrodinamica non validata"
+  },
+  "cv": {
+   "ideale": 0.1784124116152771,
+   "limite_10e4_appaiato": 0.17830789239388847,
+   "limite_10e4_totale": 0.1158067007739147,
+   "target": 0.3,
+   "stato": "il target 30% NON e' supportato: a CV=30.2% l'errore esatto e' 2.07e-2; il limite e' 17.8%"
+  },
+  "tempo_commutazione": {
+   "requisito_s": 0.23269289685518266,
+   "rilassamento_viscoso_bead_s": 5.384277991003732e-08,
+   "stato": "il vincolo viscoso e' ~10^-7 s; l'attuazione non e' modellata"
+  },
+  "energia": {
+   "lavoro_ottico_per_giro_kT": 62.83185307179586,
+   "barriera_latch_kT": [
+    10.0,
+    60.0
+   ],
+   "stato": "finestra 10-60 kT dentro i 62.8 kT per giro; non dimostrata"
+  },
+  "fatica": {
+   "cicli_richiesti": 1000000.0,
+   "durata_giorni_a_T720": 33.87132765174892,
+   "stato": "non misurata"
+  },
+  "protocollo": {
+   "tipo": "appaiato: 3 giri veloci contro 3 giri lenti",
+   "soglia": "geometrica; l'ottimizzata guadagna il 6%",
+   "N": 3,
+   "nota": "la statistica non migliora con N; i 3 cicli servono per i sistematici"
+  }
+ },
+ "ritrattazioni": [
+  "CV fino a 30.2% per 10^-4: ritrattato; il limite esatto e' 17.83% (appaiato), 11.58% (durata totale)",
+  "8.8e-7 con tre cicli: ritrattato; l'errore esatto e' 9.7e-5 e non dipende da N",
+  "2.9e-3 per il giro lento: ritrattato; la coda esatta e' 6.8e-5",
+  "due o tre cicli bastano: vero per i sistematici, non per la statistica; la statistica non migliora con N",
+  "durata totale del ciclo: non basta; l'errore e' 1.1e-2 a CV ideale, il test appaiato e' obbligatorio"
+ ],
+ "verdetto": "il latch ideale e' al limite: CV 17.8% satura il budget 10^-4; ogni rumore aggiuntivo lo porta sopra.  Il latch non e' dimostrato e non ha margine."
+}

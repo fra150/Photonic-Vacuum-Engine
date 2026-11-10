@@ -1,0 +1,137 @@
+{
+ "descrizione": "V7.3: ambienti coerenti con il cancello sul flusso",
+ "gate": {
+  "gamma_coppia_plasma": 2.7002050307921315,
+  "gamma_coppia_sangue": {
+   "7mPa_5mPa": 0.409445646298465,
+   "8mPa_10mPa": 0.27774656351859234,
+   "9mPa_20mPa": 0.10374205291863423
+  },
+  "gamma_forza": [
+   5.346070120628303,
+   10.692140241256606,
+   16.038210361884907
+  ],
+  "gamma_jeffery": 5.204436196888472,
+  "gamma_limite": 2.7002050307921315,
+  "rapporti_fisiologici": {
+   "venula": {
+    "gamma": 267.0,
+    "rapporto": 98.88138010085588
+   },
+   "capillare": {
+    "gamma": 667.0,
+    "rapporto": 247.01827912835532
+   },
+   "arteriola": {
+    "gamma": 2000.0,
+    "rapporto": 740.6844951374972
+   }
+  }
+ },
+ "ottica": {
+  "mu_a_m-1": {
+   "532": {
+    "plasma": 0.044,
+    "sangue": 23500
+   },
+   "800": {
+    "plasma": 2.3,
+    "sangue": 437
+   },
+   "1064": {
+    "plasma": 15.0,
+    "sangue": 200
+   }
+  },
+  "guadagno_cfl": {
+   "532": 530000.0,
+   "800": 190,
+   "1064": 13
+  },
+  "nota": "il guadagno CFL decresce con lambda ma resta 13x a 1064; il CFL esiste solo con flusso, quindi non entra negli ambienti A, B, D"
+ },
+ "termica": {
+  "parete": {
+   "vetro_PDMS": "pozzo (immagine negativa)",
+   "endotelio": "pozzo; L_diff = 640 um a 3 s, il calore esce dal vaso",
+   "adiabatica": "specchio (fattore 2); va dichiarata"
+  },
+  "pennes": "non usato: tau_perfusione ~ 60 s contro T720 = 2.93 s, peso 4.8%"
+ },
+ "ambienti": [
+  {
+   "id": "A",
+   "nome_it": "Plasma o tampone, in vitro, stasi",
+   "nome_en": "Plasma/buffer, in vitro, stasis",
+   "mu_mPa_s": "1.3--1.5",
+   "reologia_it": "newtoniana; $\\sigma_y=0$",
+   "reologia_en": "Newtonian; $\\sigma_y=0$",
+   "cfl_it": "assente; nessuna cellula",
+   "cfl_en": "none; no cells",
+   "parete_it": "vetro o PDMS, pozzo ($-$)",
+   "parete_en": "glass or PDMS, sink ($-$)",
+   "mu_a": "0.044 / 2.3 / 15",
+   "mu_a_en": "0.044 / 2.3 / 15",
+   "gamma_it": "$\\dot\\gamma_{\\rm lim}=2.70$ s$^{-1}$; ammesso",
+   "gamma_en": "$\\dot\\gamma_{\\rm lim}=2.70$ s$^{-1}$; allowed",
+   "stato": "ammesso"
+  },
+  {
+   "id": "B",
+   "nome_it": "Sangue intero, in vivo, stasi",
+   "nome_en": "Whole blood, in vivo, stasis",
+   "mu_mPa_s": "7--9",
+   "reologia_it": "Bingham; $\\sigma_y=5$--20 mPa",
+   "reologia_en": "Bingham; $\\sigma_y=5$--20 mPa",
+   "cfl_it": "assente; RBC, rouleaux",
+   "cfl_en": "none; RBCs, rouleaux",
+   "parete_it": "endotelio, pozzo ($-$)",
+   "parete_en": "endothelium, sink ($-$)",
+   "mu_a": "23500 / 437 / 200",
+   "mu_a_en": "23500 / 437 / 200",
+   "gamma_it": "$\\dot\\gamma_{\\rm lim}=0.10$--$0.41$; ammesso con riserva",
+   "gamma_en": "$\\dot\\gamma_{\\rm lim}=0.10$--$0.41$; allowed with caveats",
+   "stato": "ammesso con riserva"
+  },
+  {
+   "id": "C",
+   "nome_it": "Sangue intero, in vivo, flusso",
+   "nome_en": "Whole blood, in vivo, flow",
+   "mu_mPa_s": "4--10",
+   "reologia_it": "Bingham; $\\sigma_y=5$--10 mPa",
+   "reologia_en": "Bingham; $\\sigma_y=5$--10 mPa",
+   "cfl_it": "1--3 $\\mu$m; collisioni RBC",
+   "cfl_en": "1--3 $\\mu$m; RBC collisions",
+   "parete_it": "endotelio, pozzo ($-$)",
+   "parete_en": "endothelium, sink ($-$)",
+   "mu_a": "23500 / 437 / 200",
+   "mu_a_en": "23500 / 437 / 200",
+   "gamma_it": "$\\dot\\gamma=10^2$--$10^3$; escluso",
+   "gamma_en": "$\\dot\\gamma=10^2$--$10^3$; excluded",
+   "stato": "escluso"
+  },
+  {
+   "id": "D",
+   "nome_it": "Microfluidica, ex vivo, shear controllato",
+   "nome_en": "Microfluidics, ex vivo, controlled shear",
+   "mu_mPa_s": "1.3--10",
+   "reologia_it": "newtoniana o Bingham",
+   "reologia_en": "Newtonian or Bingham",
+   "cfl_it": "solo se cellule e flusso",
+   "cfl_en": "only with cells and flow",
+   "parete_it": "vetro o PDMS, pozzo ($-$)",
+   "parete_en": "glass or PDMS, sink ($-$)",
+   "mu_a": "secondo mezzo",
+   "mu_a_en": "depends on medium",
+   "gamma_it": "$\\dot\\gamma<\\dot\\gamma_{\\rm lim}$; ammesso solo sotto soglia",
+   "gamma_en": "$\\dot\\gamma<\\dot\\gamma_{\\rm lim}$; allowed only below threshold",
+   "stato": "ammesso solo sotto soglia"
+  }
+ ],
+ "note": {
+  "cfl": "limite del dominio, non ambiente: esiste solo con flusso",
+  "plasma_stasi": "plasma + stasi si realizza solo in vitro",
+  "verdetto": "il flusso fisiologico e' 99-741 volte sopra la soglia; il dispositivo vive in stasi ex vivo o in stasi in vivo"
+ }
+}
