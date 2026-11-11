@@ -414,21 +414,6 @@ cambia senza che cambi il modello, il test lo segnala.
 
 ## 12. Il preprint
 
-Il preprint è incluso, in due lingue:
+Il preprint è incluso, in due lingue: https://doi.org/10.5281/zenodo.24137503 
 
-| File | Ruolo |
-|------|-------|
-| `paper/it/Preprint_V73_it.tex` | Versione di riferimento, 31 pagine |
-| `paper/en/Preprint_V73_en.tex` | Mirror inglese, 31 pagine |
 
-Si compila con pdfTeX dalla rispettiva cartella, due volte:
-
-```powershell
-cd paper\it; pdflatex Preprint_V73_it.tex; pdflatex Preprint_V73_it.tex
-cd ..\en;    pdflatex Preprint_V73_en.tex; pdflatex Preprint_V73_en.tex
-```
-
-Il testo italiano è quello da citare. L'inglese è un mirror, non un paper
-diverso: stessi numeri, stesse tabelle, stesse figure. I cinque render Blender
-hanno una versione con etichette inglesi (`*_en.png`), generata con
-`V73_LINGUA=en`; le figure del modello sono condivise.
