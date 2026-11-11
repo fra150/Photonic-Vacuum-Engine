@@ -28,8 +28,9 @@ citare; l'inglese non è un paper diverso.
 | `codice/` | Gli script di calcolo, le tabelle, le figure, i render e la suite di test |
 | `dati/` | I JSON prodotti dagli script; nessun numero è scritto a mano |
 | `figure/` | Anteprime PNG delle figure, in italiano e in inglese |
-| `paper/` | Il preprint IT/EN, le tabelle LaTeX, le figure PDF e le macro numeriche |
 | `blender/` | Il file `.blend` e i cinque render della V7.3, in italiano e in inglese |
+
+
 
 I numeri citati nel seguito vengono tutti dai JSON in `dati/`. Se cambia il
 modello, cambia il JSON e cambiano tabelle, macro e figure.
