@@ -1,0 +1,78 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{lmodern}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{leftmargin=1.0em,itemsep=0.4pt,topsep=0.8pt,parsep=0pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{4pt}{1pt}
+\begin{document}
+\raggedright
+\fontsize{9.5}{11.4}\selectfont
+\begin{center}
+{\Large\bfseries Protocollo di misura V7.3}\\[2pt]
+{\small Sezione 13 $\cdot$ 12 novembre 2026 $\cdot$ una pagina}\\
+{\small Ogni numero viene dai JSON in \texttt{dati/}: nessun valore è scritto a mano.}\\
+{\small Riferimento: R = 0{,}5\,$\mu\mathrm{m}$, $\lambda$ = 800\,$\mathrm{nm}$, z = 2{,}0\,$\mu\mathrm{m}$, plasma 1{,}3\,$\mathrm{mPa}\cdot\mathrm{s}$, n = 1{,}33, T = 310\,$\mathrm{K}$.}\\
+{\small Obiettivo: misurare latch, termica e cancello; non dimostrare il motore.}
+\end{center}
+\hrule\vspace{2pt}
+\subsection*{Setup 1 --- Latch: rapporto e rumore appaiato}
+\textbf{Misura.} 3 mezzi-giri veloci contro 3 mezzi-giri lenti sullo stesso bead (r = 0{,}3969\,$\mu\mathrm{m}$, linker 1{,}00\,$\mu\mathrm{m}$), alla stessa potenza. Un mezzo-giro è metà del ciclo a 720$^{\circ}$, cioè un giro di 360$^{\circ}$. Il mezzo-giro veloce (contrappeso disinnestato) vale 0{,}5996\,$\mathrm{s}$, il lento (contrappeso innestato) 2{,}327\,$\mathrm{s}$; la somma è 2{,}926\,$\mathrm{s}$, il rapporto è 3{,}881, con la correzione idrodinamica non validata fino a 4{,}492.
+
+\textbf{Atteso.} Rapporto 3{,}881 per la geometria ideale; 4{,}256 con il termine traslazionale della bead, 4{,}335 con il termine completo, 4{,}492 come limite superiore.
+
+\textbf{Errore.} CV = 17{,}84\,\%; $\sigma_R$/R = CV$\cdot$$\sqrt{2/3}$ = 14{,}57\,\%; $\varepsilon$ per giro = $1{,}07\times 10^{-4}$ (soglia geometrica) e $1{,}01\times 10^{-4}$ (soglia ottimizzata); $\varepsilon$ sulle somme di 3 = $1{,}95\times 10^{-11}$ (geometrica).
+
+\textbf{Falsificazione.} Rapporto fuori da 3{,}881--4{,}492 di 2$\sigma_R$ (sotto 2: nessuna asimmetria CW/No); un CV misurato sopra 17{,}76\,\% rende irraggiungibile il budget $1\times 10^{-4}$ per giro, e sopra 30{,}77\,\% lo rende irraggiungibile anche sulle somme.
+
+\textbf{Nota.} Il criterio per giro non migliora con N; le somme migliorano con la radice di N. A CV = 30{,}2\,\% il per giro vale $2{,}21\times 10^{-2}$ (fuori budget) e le somme $7{,}38\times 10^{-5}$ (dentro). Il test sulla durata totale darebbe $1{,}14\times 10^{-2}$ e non si usa.
+
+\subsection*{Setup 2 --- Termica: forcella pozzo-specchio}
+\textbf{Misura.} $\Delta T$ allo stato stazionario in sangue, R = 0{,}5\,$\mu\mathrm{m}$, z = 2{,}0\,$\mu\mathrm{m}$, a 800\,$\mathrm{nm}$ e 1064\,$\mathrm{nm}$; potenza incidente 0{,}6628\,$\mathrm{mW}$ e 0{,}8507\,$\mathrm{mW}$.
+
+\textbf{Atteso.} A 800\,$\mathrm{nm}$: pozzo 0{,}3471\,$\mathrm{K}$, nessuna correzione 0{,}5086\,$\mathrm{K}$, specchio 0{,}6701\,$\mathrm{K}$. A 1064\,$\mathrm{nm}$: 0{,}2827\,$\mathrm{K}$, 0{,}3906\,$\mathrm{K}$, 0{,}4986\,$\mathrm{K}$.
+
+\textbf{Errore.} Forcella di modello $\pm$0{,}161\,$\mathrm{K}$ a 800\,$\mathrm{nm}$ e $\pm$0{,}108\,$\mathrm{K}$ a 1064\,$\mathrm{nm}$; risoluzione dichiarata 0{,}05\,$\mathrm{K}$; il criterio è 5{,}0\,$\mathrm{K}$.
+
+\textbf{Falsificazione.} $\Delta T$ $\ge$ 5{,}0\,$\mathrm{K}$ a una delle due lunghezze d'onda, oppure $\Delta T$ sopra lo specchio di 2$\sigma$. Il criterio 5{,}0\,$\mathrm{K}$ è scelto, non una soglia biologica.
+
+\textbf{Margine.} Lo specchio resta sotto 5{,}0\,$\mathrm{K}$ di un fattore 7{,}46 a 800\,$\mathrm{nm}$ e 10{,}03 a 1064\,$\mathrm{nm}$.
+
+\subsection*{Setup 3 --- Cancello: soglia di shear e fuga}
+\textbf{Misura.} Rampa di shear in plasma (\textmu{} = 1{,}3\,$\mathrm{mPa}\cdot\mathrm{s}$--1{,}5\,$\mathrm{mPa}\cdot\mathrm{s}$) e in sangue (\textmu{} = 8{,}0\,$\mathrm{mPa}\cdot\mathrm{s}$, $\sigma_y$ = 10{,}0\,$\mathrm{mPa}$); fuga a Q = 0{,}1.
+
+\textbf{Atteso.} In plasma $\gamma^\star$ = 2{,}700\,$\mathrm{s}^{-1}$, con 2{,}340\,$\mathrm{s}^{-1}$ a \textmu{} = 1{,}5\,$\mathrm{mPa}\cdot\mathrm{s}$; in sangue 0{,}2777\,$\mathrm{s}^{-1}$ con $M_y$ = 4$\pi R^3\sigma_y$, e banda 0{,}1037\,$\mathrm{s}^{-1}$--0{,}4094\,$\mathrm{s}^{-1}$. A Q = 0{,}1: $U_0$ = 8{,}59\,$kT$, $\tau_{\rm esc}$ = 200{,}7\,$\mathrm{s}$.
+
+\textbf{Errore.} In plasma $\pm$0{,}180\,$\mathrm{s}^{-1}$ (6{,}67\,\%), interamente dalla banda di \textmu{}; in sangue la banda 0{,}1037\,$\mathrm{s}^{-1}$--0{,}4094\,$\mathrm{s}^{-1}$ copre \textmu{} = 7{,}0\,$\mathrm{mPa}\cdot\mathrm{s}$--9{,}0\,$\mathrm{mPa}\cdot\mathrm{s}$ e $\sigma_y$ = 5{,}0\,$\mathrm{mPa}$--20{,}0\,$\mathrm{mPa}$. La convenzione di fuga è $\tau_D$ = $\xi/k_{\rm rad}$ = 0{,}0374\,$\mathrm{s}$, non $w_0^2$/(4D) = 0{,}321\,$\mathrm{s}$.
+
+\textbf{Falsificazione.} Rotazione persistente a 267{,}0\,$\mathrm{s}^{-1}$ (venula, 98{,}88$\times$ la soglia) o $\gamma^\star$ fuori banda di 2$\sigma$; nessuna fuga in 2007\,$\mathrm{s}$ a Q = 0{,}1 falsifica la barriera.
+
+\textbf{Nota.} Il prefattore Bingham è 4$\pi R^3\sigma_y$, conservativo; la soluzione esatta della sfera darebbe un fattore 1{,}5 più basso. Il sangue intero resta una reologia efficace, non una curva misurata.
+
+\subsection*{Criteri comuni}
+\begin{itemize}
+\item \textbf{Soglia prima dei dati.} La soglia geometrica si fissa prima di guardare i tempi; l'ottimizzata si riporta solo come controllo.
+\item \textbf{Appaiamento.} Ogni ciclo veloce è appaiato al suo lento; il test sulla durata totale non si usa.
+\item \textbf{Budget.} Il budget è $1\times 10^{-4}$ per confronto; il CV massimo è 17{,}76\,\% per giro e 30{,}77\,\% sulle somme.
+\item \textbf{Referto.} Si riportano insieme valore, errore e falsificazione; un risultato fuori banda si dichiara, non si scarta.
+\end{itemize}
+\subsection*{Che cosa questo protocollo non prova}
+\begin{itemize}
+\item \textbf{Non prova la sicurezza biologica.} 5{,}0\,$\mathrm{K}$ è un criterio termico scelto, non una soglia di danno.
+\item \textbf{Non prova il latch.} Misura rapporto e rumore; non misura l'attuazione, l'energia o la fatica.
+\item \textbf{Non prova il funzionamento in flusso.} Misura la soglia in stasi; il sangue intero resta una reologia efficace, non una curva misurata.
+\end{itemize}
+\end{document}

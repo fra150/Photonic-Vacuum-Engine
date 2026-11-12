@@ -1,0 +1,78 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{leftmargin=1.0em,itemsep=0.4pt,topsep=0.8pt,parsep=0pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{4pt}{1pt}
+\begin{document}
+\raggedright
+\fontsize{9.5}{11.4}\selectfont
+\begin{center}
+{\Large\bfseries Measurement protocol V7.3}\\[2pt]
+{\small Section 13 $\cdot$ 12 November 2026 $\cdot$ one page}\\
+{\small Every number comes from the JSON files in \texttt{dati/}: no value is written by hand.}\\
+{\small Reference: R = 0.5\,$\mu\mathrm{m}$, $\lambda$ = 800\,$\mathrm{nm}$, z = 2.0\,$\mu\mathrm{m}$, plasma 1.3\,$\mathrm{mPa}\cdot\mathrm{s}$, n = 1.33, T = 310\,$\mathrm{K}$.}\\
+{\small Goal: measure latch, thermal, and gate; do not prove the engine.}
+\end{center}
+\hrule\vspace{2pt}
+\subsection*{Setup 1 --- Latch: ratio and paired noise}
+\textbf{Measurement.} 3 fast half-turns against 3 slow half-turns on the same bead (r = 0.3969\,$\mu\mathrm{m}$, linker 1.00\,$\mu\mathrm{m}$) at the same power. A half-turn is half of the 720$^{\circ}$ cycle, i.e. one 360$^{\circ}$ turn. The fast half-turn (counterweight disengaged) is 0.5996\,$\mathrm{s}$, the slow one (counterweight engaged) 2.327\,$\mathrm{s}$; the sum is 2.926\,$\mathrm{s}$, the ratio is 3.881, up to 4.492 with the unvalidated hydrodynamic correction.
+
+\textbf{Expected.} Ratio 3.881 for the ideal geometry; 4.256 with the translational bead term, 4.335 with the full term, 4.492 as the upper bound.
+
+\textbf{Error.} CV = 17.84\,\%; $\sigma_R$/R = CV$\cdot$$\sqrt{2/3}$ = 14.57\,\%; per-turn $\varepsilon$ = $1.07\times 10^{-4}$ (geometric threshold) and $1.01\times 10^{-4}$ (optimized threshold); $\varepsilon$ on sums of 3 = $1.95\times 10^{-11}$ (geometric).
+
+\textbf{Falsification.} Ratio outside 3.881--4.492 by 2$\sigma_R$ (below 2: no CW/No asymmetry); a measured CV above 17.76\,\% makes the $1\times 10^{-4}$ budget unreachable per turn, and above 30.77\,\% makes it unreachable on sums.
+
+\textbf{Note.} The per-turn criterion does not improve with N; the sums improve with the square root of N. At CV = 30.2\,\% the per-turn error is $2.21\times 10^{-2}$ (outside budget) and the sums give $7.38\times 10^{-5}$ (inside). The total-duration test would give $1.14\times 10^{-2}$ and is not used.
+
+\subsection*{Setup 2 --- Thermal: sink-mirror bracket}
+\textbf{Measurement.} Steady-state $\Delta T$ in blood, R = 0.5\,$\mu\mathrm{m}$, z = 2.0\,$\mu\mathrm{m}$, at 800\,$\mathrm{nm}$ and 1064\,$\mathrm{nm}$; incident power 0.6628\,$\mathrm{mW}$ and 0.8507\,$\mathrm{mW}$.
+
+\textbf{Expected.} At 800\,$\mathrm{nm}$: sink 0.3471\,$\mathrm{K}$, no correction 0.5086\,$\mathrm{K}$, mirror 0.6701\,$\mathrm{K}$. At 1064\,$\mathrm{nm}$: 0.2827\,$\mathrm{K}$, 0.3906\,$\mathrm{K}$, 0.4986\,$\mathrm{K}$.
+
+\textbf{Error.} Model bracket $\pm$0.161\,$\mathrm{K}$ at 800\,$\mathrm{nm}$ and $\pm$0.108\,$\mathrm{K}$ at 1064\,$\mathrm{nm}$; declared resolution 0.05\,$\mathrm{K}$; the criterion is 5.0\,$\mathrm{K}$.
+
+\textbf{Falsification.} $\Delta T$ $\ge$ 5.0\,$\mathrm{K}$ at either wavelength, or $\Delta T$ above the mirror by 2$\sigma$. The 5.0\,$\mathrm{K}$ criterion is chosen, not a biological threshold.
+
+\textbf{Margin.} The mirror stays below 5.0\,$\mathrm{K}$ by a factor 7.46 at 800\,$\mathrm{nm}$ and 10.03 at 1064\,$\mathrm{nm}$.
+
+\subsection*{Setup 3 --- Gate: shear threshold and escape}
+\textbf{Measurement.} Shear ramp in plasma (\textmu{} = 1.3\,$\mathrm{mPa}\cdot\mathrm{s}$--1.5\,$\mathrm{mPa}\cdot\mathrm{s}$) and in blood (\textmu{} = 8.0\,$\mathrm{mPa}\cdot\mathrm{s}$, $\sigma_y$ = 10.0\,$\mathrm{mPa}$); escape at Q = 0.1.
+
+\textbf{Expected.} In plasma $\gamma^\star$ = 2.700\,$\mathrm{s}^{-1}$, with 2.340\,$\mathrm{s}^{-1}$ at \textmu{} = 1.5\,$\mathrm{mPa}\cdot\mathrm{s}$; in blood 0.2777\,$\mathrm{s}^{-1}$ with $M_y$ = 4$\pi R^3\sigma_y$, and band 0.1037\,$\mathrm{s}^{-1}$--0.4094\,$\mathrm{s}^{-1}$. At Q = 0.1: $U_0$ = 8.59\,$kT$, $\tau_{\rm esc}$ = 200.7\,$\mathrm{s}$.
+
+\textbf{Error.} In plasma $\pm$0.180\,$\mathrm{s}^{-1}$ (6.67\,\%), entirely from the \textmu{} band; in blood the band 0.1037\,$\mathrm{s}^{-1}$--0.4094\,$\mathrm{s}^{-1}$ covers \textmu{} = 7.0\,$\mathrm{mPa}\cdot\mathrm{s}$--9.0\,$\mathrm{mPa}\cdot\mathrm{s}$ and $\sigma_y$ = 5.0\,$\mathrm{mPa}$--20.0\,$\mathrm{mPa}$. The escape convention is $\tau_D$ = $\xi/k_{\rm rad}$ = 0.0374\,$\mathrm{s}$, not $w_0^2$/(4D) = 0.321\,$\mathrm{s}$.
+
+\textbf{Falsification.} Persistent rotation at 267.0\,$\mathrm{s}^{-1}$ (venule, 98.88$\times$ the threshold) or $\gamma^\star$ outside the band by 2$\sigma$; no escape within 2007\,$\mathrm{s}$ at Q = 0.1 falsifies the barrier.
+
+\textbf{Note.} The Bingham prefactor is 4$\pi R^3\sigma_y$, conservative; the exact sphere solution would be a factor 1.5 lower. Whole blood remains an effective rheology, not a measured curve.
+
+\subsection*{Common criteria}
+\begin{itemize}
+\item \textbf{Threshold before data.} The geometric threshold is fixed before looking at the times; the optimized one is reported only as a check.
+\item \textbf{Pairing.} Every fast cycle is paired with its slow cycle; the total-duration test is not used.
+\item \textbf{Budget.} The budget is $1\times 10^{-4}$ per comparison; the maximum CV is 17.76\,\% per turn and 30.77\,\% on sums.
+\item \textbf{Report.} Value, error, and falsification are reported together; an out-of-band result is declared, not discarded.
+\end{itemize}
+\subsection*{What this protocol does not prove}
+\begin{itemize}
+\item \textbf{It does not prove biological safety.} 5.0\,$\mathrm{K}$ is a chosen thermal criterion, not a damage threshold.
+\item \textbf{It does not prove the latch.} It measures ratio and noise; it does not measure actuation, energy, or fatigue.
+\item \textbf{It does not prove operation in flow.} It measures the stasis threshold; whole blood remains an effective rheology, not a measured curve.
+\end{itemize}
+\end{document}
